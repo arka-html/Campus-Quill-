@@ -1472,3 +1472,36 @@ body.dark-mode .lang-filter-btn.active {
     padding: 0.9rem 1.5rem;
   }
 }
+/* ==============================
+   ABOUT THE CREATOR BUTTON
+   ============================== */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.creator-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.creator-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}

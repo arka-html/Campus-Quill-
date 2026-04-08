@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CampusQuill — Where Student Voices Find Their Words</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="light-mode">
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">CampusQuill</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#writers">Writers</a></li>
+        <li><a href="#submit">Submit Work</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">WORDS</div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        A Literary Space for Students
+      </div>
+      <h1 class="hero-title">
+        Where Student<br/>
+        <em>Voices</em> Find<br/>
+        Their <span class="hero-highlight">Words</span>
+      </h1>
+      <p class="hero-subtitle">
+        CampusQuill is a curated literary platform celebrating the
+        poems, stories, quotes and essays of college writers.
+        Your words deserve to be heard.
+      </p>
+      <div class="hero-buttons">
+        <a href="#explore" class="btn-primary">
+          <i class="fas fa-book-open"></i>
+          Explore Works
+        </a>
+        <a href="#submit" class="btn-secondary">
+          <i class="fas fa-feather-alt"></i>
+          Submit Your Work
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="totalWriters">0</span>
+          <span class="stat-label">Writers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="totalWorks">0</span>
+          <span class="stat-label">Published Works</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Stories to Tell</span>
+        </div>
+      </div>
+    </div>
+    <div class="floating-words">
+      <span class="fw fw1">poetry</span>
+      <span class="fw fw2">stories</span>
+      <span class="fw fw3">words</span>
+      <span class="fw fw4">dreams</span>
+      <span class="fw fw5">prose</span>
+      <span class="fw fw6">verses</span>
+    </div>
+  </section>
+
+  <!-- ======= FEATURED SECTION ======= -->
+  <section class="featured-section" id="featured">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ Editor's Choice</span>
+        <h2 class="section-title">Featured This Week</h2>
+        <p class="section-subtitle">
+          Handpicked works that moved us deeply
+        </p>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- ======= EXPLORE SECTION ======= -->
+  <section class="explore-section" id="explore">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ All Works</span>
+        <h2 class="section-title">Explore the Collection</h2>
+        <p class="section-subtitle">
+          Filter, discover and immerse yourself
+        </p>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by title or author name..."
+          class="search-input"
+        />
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">
+          All Works
+        </button>
+        <button class="filter-btn" data-filter="Poem">
+          <i class="fas fa-feather"></i> Poems
+        </button>
+        <button class="filter-btn" data-filter="Story">
+          <i class="fas fa-book"></i> Stories
+        </button>
+        <button class="filter-btn" data-filter="Quote">
+          <i class="fas fa-quote-left"></i> Quotes
+        </button>
+        <button class="filter-btn" data-filter="Essay">
+          <i class="fas fa-scroll"></i> Essays
+        </button>
+      </div>
+      <div class="works-grid" id="worksGrid"></div>
+      <div class="no-results" id="noResults" style="display:none;">
+        <i class="fas fa-search"></i>
+        <p>No works found. Try a different search!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= WRITERS SECTION ======= -->
+  <section class="writers-section" id="writers">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ Our Community</span>
+        <h2 class="section-title">Meet the Writers</h2>
+        <p class="section-subtitle">
+          The brilliant minds behind the words
+        </p>
+      </div>
+      <div class="writers-grid" id="writersGrid"></div>
+    </div>
+  </section>
+
+  <!-- ======= MODAL ======= -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ======= SUBMIT SECTION ======= -->
+  <section class="submit-section" id="submit">
+    <div class="section-container">
+      <div class="submit-card">
+        <div class="submit-left">
+          <span class="section-tag">✦ Join Us</span>
+          <h2 class="submit-title">
+            Ready to Share<br/>Your <em>Story?</em>
+          </h2>
+          <p class="submit-desc">
+            CampusQuill welcomes every voice, every story,
+            every poem. Your words have the power to move hearts.
+            Let the world read what you have written.
+          </p>
+          <div class="submit-steps">
+            <div class="submit-step">
+              <div class="step-num">01</div>
+              <div class="step-info">
+                <strong>Register Once</strong>
+                <span>Fill a quick form with your details</span>
+              </div>
+            </div>
+            <div class="submit-step">
+              <div class="step-num">02</div>
+              <div class="step-info">
+                <strong>Email Your Work</strong>
+                <span>Send poems or stories directly to us</span>
+              </div>
+            </div>
+            <div class="submit-step">
+              <div class="step-num">03</div>
+              <div class="step-info">
+                <strong>Get Published</strong>
+                <span>Your work goes live within 24-48 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submit-right">
+          <div class="submit-info-box">
+            <div class="info-icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <h3>New Writer?</h3>
+            <p>Register first to get your personal
+               profile page on CampusQuill</p>
+            <a href="YOUR_GOOGLE_FORM_LINK"
+               target="_blank"
+               class="btn-primary">
+              <i class="fas fa-feather-alt"></i>
+              Register as Writer
+            </a>
+          </div>
+          <div class="submit-info-box">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Already Registered?</h3>
+            <p>Simply email your work directly
+               to us anytime!</p>
+            <a href="mailto:campusquill@gmail.com"
+               class="btn-secondary">
+              <i class="fas fa-paper-plane"></i>
+              campusquill@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">✦</span>
+            <span class="logo-text">CampusQuill</span>
+          </div>
+          <p>Where Student Voices Find Their Words</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#explore">Explore</a>
+          <a href="#writers">Writers</a>
+          <a href="#submit">Submit</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CampusQuill — Made with
+          <i class="fas fa-heart"></i>
+          for student writers everywhere
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

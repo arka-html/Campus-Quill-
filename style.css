@@ -19,7 +19,7 @@
   --nav-bg: rgba(253,250,246,0.95);
 }
 
-/* --- DARK MODE VARIABLES --- */
+/* --- DARK MODE --- */
 body.dark-mode {
   --bg-primary: #0F0F0F;
   --bg-secondary: #1A1A1A;
@@ -36,7 +36,7 @@ body.dark-mode {
   --nav-bg: rgba(15,15,15,0.98);
 }
 
-/* --- RESET & BASE --- */
+/* --- RESET --- */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -65,19 +65,14 @@ body {
 }
 
 /* --- SELECTION --- */
-::selection {
-  background: var(--accent);
-  color: #fff;
-}
+::selection { background: var(--accent); color: #fff; }
 
 /* ==============================
    NAVBAR
    ============================== */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 1000;
   background: var(--nav-bg);
   backdrop-filter: blur(20px);
@@ -148,10 +143,8 @@ body {
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 1px;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
   background: var(--accent);
   transition: width 0.3s ease;
 }
@@ -169,8 +162,7 @@ body {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   color: var(--text-primary);
-  width: 40px;
-  height: 40px;
+  width: 40px; height: 40px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -198,8 +190,7 @@ body {
 
 .hamburger span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 24px; height: 2px;
   background: var(--text-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -252,8 +243,7 @@ body {
   font-weight: 900;
   color: var(--accent);
   opacity: 0.03;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
   user-select: none;
@@ -287,8 +277,7 @@ body {
 }
 
 .badge-dot {
-  width: 6px;
-  height: 6px;
+  width: 6px; height: 6px;
   background: var(--accent);
   border-radius: 50%;
   animation: pulse-dot 2s infinite;
@@ -322,10 +311,8 @@ body {
 .hero-highlight::after {
   content: '';
   position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
+  bottom: 5px; left: 0;
+  width: 100%; height: 3px;
   background: var(--accent-light);
   border-radius: 2px;
 }
@@ -428,8 +415,7 @@ body {
 }
 
 .stat-divider {
-  width: 1px;
-  height: 40px;
+  width: 1px; height: 40px;
   background: var(--border);
 }
 
@@ -452,39 +438,17 @@ body {
   animation: float-word 15s ease-in-out infinite;
 }
 
-/* Bengali floating words use Bengali font */
 .fw2, .fw4, .fw6 {
   font-family: 'Tiro Bangla', serif;
   font-style: normal;
 }
 
-.fw1 {
-  top: 15%; left: 5%;
-  animation-delay: 0s;
-  font-size: 1.5rem;
-}
-.fw2 {
-  top: 70%; left: 8%;
-  animation-delay: 3s;
-}
-.fw3 {
-  top: 20%; right: 5%;
-  animation-delay: 1.5s;
-  font-size: 1.8rem;
-}
-.fw4 {
-  top: 60%; right: 10%;
-  animation-delay: 4.5s;
-}
-.fw5 {
-  top: 40%; left: 3%;
-  animation-delay: 6s;
-}
-.fw6 {
-  bottom: 20%; right: 5%;
-  animation-delay: 2s;
-  font-size: 1.3rem;
-}
+.fw1 { top: 15%; left: 5%; animation-delay: 0s; font-size: 1.5rem; }
+.fw2 { top: 70%; left: 8%; animation-delay: 3s; }
+.fw3 { top: 20%; right: 5%; animation-delay: 1.5s; font-size: 1.8rem; }
+.fw4 { top: 60%; right: 10%; animation-delay: 4.5s; }
+.fw5 { top: 40%; left: 3%; animation-delay: 6s; }
+.fw6 { bottom: 20%; right: 5%; animation-delay: 2s; font-size: 1.3rem; }
 
 @keyframes float-word {
   0%, 100% { transform: translateY(0px) rotate(-5deg); }
@@ -612,8 +576,7 @@ body {
 }
 
 .author-avatar {
-  width: 36px;
-  height: 36px;
+  width: 36px; height: 36px;
   border-radius: 50%;
   background: var(--accent);
   display: flex;
@@ -628,8 +591,7 @@ body {
 }
 
 .author-avatar img {
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   object-fit: cover;
 }
 
@@ -662,12 +624,12 @@ body {
 .featured-card:hover .read-btn { gap: 0.6rem; }
 
 /* ==============================
-   LANGUAGE & CATEGORY BADGES
+   LANGUAGE BADGES
+   (on works only not writers)
    ============================== */
 .lang-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
   font-family: 'Inter', sans-serif;
   font-size: 0.62rem;
   font-weight: 600;
@@ -712,8 +674,7 @@ body.dark-mode .lang-badge.bengali {
 
 .search-icon {
   position: absolute;
-  left: 1.2rem;
-  top: 50%;
+  left: 1.2rem; top: 50%;
   transform: translateY(-50%);
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -742,7 +703,6 @@ body.dark-mode .lang-badge.bengali {
   font-style: italic;
 }
 
-/* Filter Buttons Row */
 .filter-buttons {
   display: flex;
   gap: 0.75rem;
@@ -751,10 +711,7 @@ body.dark-mode .lang-badge.bengali {
   margin-bottom: 1rem;
 }
 
-/* Language filter row has more spacing below */
-.lang-filters {
-  margin-bottom: 3rem;
-}
+.lang-filters { margin-bottom: 3rem; }
 
 .filter-btn {
   display: inline-flex;
@@ -779,7 +736,6 @@ body.dark-mode .lang-badge.bengali {
   color: white;
 }
 
-/* Language filter buttons slightly different style */
 .lang-filter-btn {
   display: inline-flex;
   align-items: center;
@@ -810,7 +766,6 @@ body.dark-mode .lang-filter-btn.active {
   color: white;
 }
 
-/* Works Grid */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -824,8 +779,6 @@ body.dark-mode .lang-filter-btn.active {
   padding: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
 
 .work-card:hover {
@@ -847,45 +800,31 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 /* ==============================
-   BENGALI TEXT STYLES
+   BENGALI TEXT
    ============================== */
 .bengali-text {
   font-family: 'Tiro Bangla', serif !important;
   font-size: 1.1rem;
   line-height: 2.2;
-  letter-spacing: 0.01em;
   font-style: normal !important;
 }
 
-.card-title.bengali-text {
-  font-size: 1.4rem;
-  line-height: 1.5;
-}
-
-.work-card .card-title.bengali-text {
-  font-size: 1.15rem;
-}
-
+.card-title.bengali-text { font-size: 1.35rem; line-height: 1.5; }
+.work-card .card-title.bengali-text { font-size: 1.1rem; }
 .card-excerpt.bengali-text {
   font-family: 'Hind Siliguri', sans-serif !important;
   font-size: 0.95rem;
   line-height: 1.9;
   font-style: normal !important;
 }
-
 .modal-body.bengali-text {
-  font-family: 'Tiro Bangla', serif !important;
   font-size: 1.1rem;
   line-height: 2.4;
-  font-style: normal !important;
 }
-
 .modal-title.bengali-text {
-  font-family: 'Tiro Bangla', serif !important;
   font-size: 1.8rem;
   line-height: 1.4;
 }
-
 .writer-bio.bengali-text {
   font-family: 'Hind Siliguri', sans-serif !important;
   font-size: 0.9rem;
@@ -912,6 +851,9 @@ body.dark-mode .lang-filter-btn.active {
   text-align: center;
   cursor: pointer;
   transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .writer-card:hover {
@@ -921,8 +863,7 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 .writer-photo {
-  width: 90px;
-  height: 90px;
+  width: 90px; height: 90px;
   border-radius: 50%;
   background: linear-gradient(
     135deg, var(--accent), var(--accent-light)
@@ -945,8 +886,7 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 .writer-photo img {
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   object-fit: cover;
 }
 
@@ -955,22 +895,17 @@ body.dark-mode .lang-filter-btn.active {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .writer-college {
   font-family: 'Inter', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--accent);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
 }
 
 .writer-bio {
@@ -978,7 +913,17 @@ body.dark-mode .lang-filter-btn.active {
   color: var(--text-secondary);
   font-style: italic;
   line-height: 1.6;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+
+.writer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: auto;
 }
 
 .writer-works-count {
@@ -987,8 +932,43 @@ body.dark-mode .lang-filter-btn.active {
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.35rem;
+}
+
+.writer-works-count i {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
+/* ✅ WRITER SINCE BADGE */
+.writer-since-badge {
+  display: inline-flex;
+  align-items: center;
   gap: 0.4rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.writer-since-badge i {
+  font-size: 0.62rem;
+  color: var(--accent-light);
+}
+
+.writer-card:hover .writer-since-badge {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.writer-card:hover .writer-since-badge i {
+  color: white;
 }
 
 /* ==============================
@@ -1034,13 +1014,11 @@ body.dark-mode .lang-filter-btn.active {
 
 .modal-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.5rem; right: 1.5rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   color: var(--text-primary);
-  width: 36px;
-  height: 36px;
+  width: 36px; height: 36px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -1090,8 +1068,7 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 .modal-divider {
-  width: 40px;
-  height: 2px;
+  width: 40px; height: 2px;
   background: var(--accent);
   margin-bottom: 2rem;
 }
@@ -1232,8 +1209,7 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 .info-icon {
-  width: 50px;
-  height: 50px;
+  width: 50px; height: 50px;
   background: var(--accent);
   border-radius: 50%;
   display: flex;
@@ -1331,11 +1307,6 @@ body.dark-mode .lang-filter-btn.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -1348,7 +1319,7 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 /* ==============================
-   RESPONSIVE - TABLET
+   RESPONSIVE TABLET
    ============================== */
 @media (max-width: 900px) {
   .submit-card {
@@ -1359,15 +1330,13 @@ body.dark-mode .lang-filter-btn.active {
 }
 
 /* ==============================
-   RESPONSIVE - MOBILE
+   RESPONSIVE MOBILE
    ============================== */
 @media (max-width: 768px) {
 
-  /* Mobile Nav */
   .nav-links {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: 0; right: -100%;
     width: 75%;
     max-width: 300px;
     height: 100vh;
@@ -1384,26 +1353,15 @@ body.dark-mode .lang-filter-btn.active {
   }
 
   .nav-links.open { right: 0; }
-
-  .nav-links a {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-  }
-
+  .nav-links a { font-size: 1.1rem; }
   .nav-overlay { display: block; }
   .hamburger { display: flex; }
 
-  /* Hero */
   .hero { padding: 90px 1.5rem 60px; }
-
   .hero-stats { gap: 1.2rem; }
-
   .stat-number { font-size: 2rem; }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+  .hero-buttons { flex-direction: column; align-items: center; }
 
   .btn-primary,
   .btn-secondary {
@@ -1412,36 +1370,21 @@ body.dark-mode .lang-filter-btn.active {
     justify-content: center;
   }
 
-  /* Grids */
   .featured-grid,
   .works-grid,
-  .writers-grid {
-    grid-template-columns: 1fr;
-  }
+  .writers-grid { grid-template-columns: 1fr; }
 
-  /* Section padding */
   .section-container { padding: 70px 1.5rem; }
 
-  /* Footer */
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .footer-top { flex-direction: column; text-align: center; }
   .footer-links { justify-content: center; }
 
-  /* Modal */
   .modal-box { padding: 2rem 1.5rem; }
   .modal-title { font-size: 1.5rem; }
-
-  /* Bengali modal title on mobile */
   .modal-title.bengali-text { font-size: 1.4rem; }
 
-  /* Filter buttons on mobile */
   .filter-buttons,
-  .lang-filters {
-    gap: 0.5rem;
-  }
+  .lang-filters { gap: 0.5rem; }
 
   .filter-btn,
   .lang-filter-btn {

@@ -1,10 +1,9 @@
 // ================================
 //   CAMPUSQUILL — COMPLETE JS
-//   All Features Included! ✅
 // ================================
 
 // ================================
-//   DATA — EDIT THIS ONLY!
+//   DATA — ONLY EDIT THIS PART
 // ================================
 
 const writers = [
@@ -19,6 +18,7 @@ const writers = [
     photo: null,
     language: "english",
     bio: "I write when words feel like feelings I cannot speak aloud.",
+    joinedDate: "January 2025",
     works: [
       {
         id: "first-rain",
@@ -69,6 +69,7 @@ different than before.`
     photo: null,
     language: "bengali",
     bio: "শব্দের মধ্যে আমি আমার জগৎ খুঁজে পাই।",
+    joinedDate: "January 2025",
     works: [
       {
         id: "akash-amar",
@@ -127,6 +128,7 @@ different than before.`
     photo: null,
     language: "bengali",
     bio: "গল্পের মধ্যে জীবন খুঁজি, জীবনের মধ্যে গল্প।",
+    joinedDate: "January 2025",
     works: [
       {
         id: "shesh-chithi",
@@ -176,6 +178,7 @@ different than before.`
     photo: null,
     language: "bengali",
     bio: "কলমই আমার সবচেয়ে বিশ্বস্ত বন্ধু।",
+    joinedDate: "March 2025",
     works: [
       {
         id: "alo-amar",
@@ -212,6 +215,7 @@ different than before.`
     photo: null,
     language: "english",
     bio: "Poetry is my way of making sense of things that do not make sense.",
+    joinedDate: "January 2025",
     works: [
       {
         id: "midnight-letters",
@@ -243,6 +247,7 @@ Company beneath this quiet sky.`
     photo: null,
     language: "english",
     bio: "Every story is someone's truth waiting to be heard.",
+    joinedDate: "February 2025",
     works: [
       {
         id: "the-library",
@@ -263,7 +268,7 @@ That, I think, is its own kind of devotion."`
 ];
 
 // ================================
-//   GET ALL WORKS FLAT
+//   GET ALL WORKS
 // ================================
 
 function getAllWorks() {
@@ -279,7 +284,7 @@ function getAllWorks() {
 const allWorks = getAllWorks();
 
 // ================================
-//   THEME / DARK MODE
+//   DARK MODE
 // ================================
 
 const themeToggle = document.getElementById('themeToggle');
@@ -318,21 +323,18 @@ const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
-
-  // Close mobile nav on scroll
   if (navLinks.classList.contains('open')) {
     closeMobileNav();
   }
 }, { passive: true });
 
 // ================================
-//   MOBILE NAV — BUG FIXED ✅
+//   MOBILE NAV
 // ================================
 
-const hamburger = document.getElementById('hamburger');
-const navLinks  = document.getElementById('navLinks');
+const hamburger  = document.getElementById('hamburger');
+const navLinks   = document.getElementById('navLinks');
 
-// Create overlay
 const navOverlay = document.createElement('div');
 navOverlay.classList.add('nav-overlay');
 document.body.appendChild(navOverlay);
@@ -418,11 +420,11 @@ function getAvatar(writer) {
 
 function getCategoryIcon(category) {
   const icons = {
-    'Poem':         '<i class="fas fa-feather"></i>',
-    'Story':        '<i class="fas fa-book"></i>',
-    'Quote':        '<i class="fas fa-quote-left"></i>',
-    'Essay':        '<i class="fas fa-scroll"></i>',
-    'Flash Fiction':'<i class="fas fa-bolt"></i>'
+    'Poem':          '<i class="fas fa-feather"></i>',
+    'Story':         '<i class="fas fa-book"></i>',
+    'Quote':         '<i class="fas fa-quote-left"></i>',
+    'Essay':         '<i class="fas fa-scroll"></i>',
+    'Flash Fiction': '<i class="fas fa-bolt"></i>'
   };
   return icons[category] || '<i class="fas fa-pen"></i>';
 }
@@ -455,16 +457,20 @@ function renderFeatured() {
 
   grid.innerHTML = featured.map(work => `
     <div class="featured-card reveal"
-         onclick="openModal('${work.id}','${work.writer.id}')">
+         onclick="openModal(
+           '${work.id}','${work.writer.id}'
+         )">
       <div class="card-category">
         ${getCategoryIcon(work.category)}
         ${work.category}
         ${getLangBadge(work.language)}
       </div>
-      <h3 class="card-title ${getBengaliClass(work.language)}">
+      <h3 class="card-title
+          ${getBengaliClass(work.language)}">
         ${work.title}
       </h3>
-      <p class="card-excerpt ${getBengaliClass(work.language)}">
+      <p class="card-excerpt
+         ${getBengaliClass(work.language)}">
         ${getExcerpt(work.content, 110)}
       </p>
       <div class="card-footer">
@@ -505,24 +511,30 @@ function renderWorks(worksToShow = allWorks) {
 
   grid.innerHTML = worksToShow.map(work => `
     <div class="work-card reveal"
-         onclick="openModal('${work.id}','${work.writer.id}')">
+         onclick="openModal(
+           '${work.id}','${work.writer.id}'
+         )">
       <div class="card-category">
         ${getCategoryIcon(work.category)}
         ${work.category}
         ${getLangBadge(work.language)}
       </div>
-      <h3 class="card-title ${getBengaliClass(work.language)}"
+      <h3 class="card-title
+          ${getBengaliClass(work.language)}"
           style="font-size:1.15rem;">
         ${work.title}
       </h3>
-      <p class="card-excerpt ${getBengaliClass(work.language)}"
+      <p class="card-excerpt
+         ${getBengaliClass(work.language)}"
          style="font-size:0.88rem;">
         ${getExcerpt(work.content, 100)}
       </p>
-      <div class="card-footer" style="margin-top:1.2rem;">
+      <div class="card-footer"
+           style="margin-top:1.2rem;">
         <div class="card-author">
           <div class="author-avatar"
-               style="width:30px;height:30px;font-size:0.8rem;">
+               style="width:30px;height:30px;
+                      font-size:0.8rem;">
             ${getAvatar(work.writer)}
           </div>
           <div class="author-info">
@@ -532,7 +544,8 @@ function renderWorks(worksToShow = allWorks) {
             <span>${work.date}</span>
           </div>
         </div>
-        <div class="read-btn" style="font-size:0.75rem;">
+        <div class="read-btn"
+             style="font-size:0.75rem;">
           Read <i class="fas fa-arrow-right"></i>
         </div>
       </div>
@@ -551,22 +564,37 @@ function renderWriters() {
 
   grid.innerHTML = writers.map(writer => `
     <div class="writer-card reveal">
+
       <div class="writer-photo">
         ${getAvatar(writer)}
       </div>
-      <div class="writer-name">${writer.name}</div>
+
+      <div class="writer-name">
+        ${writer.name}
+      </div>
+
       <div class="writer-college">
         ${writer.college}
-        ${getLangBadge(writer.language)}
       </div>
-      <p class="writer-bio ${getBengaliClass(writer.language)}">
+
+      <p class="writer-bio
+         ${getBengaliClass(writer.language)}">
         "${writer.bio}"
       </p>
-      <div class="writer-works-count">
-        <i class="fas fa-pen-nib"></i>
-        ${writer.works.length}
-        ${writer.works.length === 1 ? 'Work' : 'Works'} Published
+
+      <div class="writer-bottom">
+        <div class="writer-works-count">
+          <i class="fas fa-pen-nib"></i>
+          ${writer.works.length}
+          ${writer.works.length === 1
+            ? 'Work' : 'Works'} Published
+        </div>
+        <div class="writer-since-badge">
+          <i class="fas fa-star"></i>
+          Writer since ${writer.joinedDate}
+        </div>
       </div>
+
     </div>
   `).join('');
 
@@ -574,7 +602,7 @@ function renderWriters() {
 }
 
 // ================================
-//   FILTER & SEARCH
+//   FILTER AND SEARCH
 // ================================
 
 const filterBtns  = document.querySelectorAll('.filter-btn');
@@ -585,7 +613,6 @@ let activeCategory = 'all';
 let activeLang     = 'all';
 let searchQuery    = '';
 
-// Category filter
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'));
@@ -595,7 +622,6 @@ filterBtns.forEach(btn => {
   });
 });
 
-// Language filter
 langBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     langBtns.forEach(b => b.classList.remove('active'));
@@ -605,7 +631,6 @@ langBtns.forEach(btn => {
   });
 });
 
-// Search
 searchInput.addEventListener('input', e => {
   searchQuery = e.target.value.toLowerCase().trim();
   applyFilters();
@@ -667,10 +692,12 @@ function openModal(workId, writerId) {
 
     <div class="modal-meta">
       <span>
-        <i class="fas fa-user"></i> ${writer.name}
+        <i class="fas fa-user"></i>
+        ${writer.name}
       </span>
       <span>
-        <i class="fas fa-calendar"></i> ${work.date}
+        <i class="fas fa-calendar"></i>
+        ${work.date}
       </span>
       <span>
         <i class="fas fa-clock"></i>
@@ -688,7 +715,8 @@ function openModal(workId, writerId) {
     <div class="modal-author-section">
       <div class="author-avatar"
            style="width:50px;height:50px;
-                  font-size:1.2rem;flex-shrink:0;">
+                  font-size:1.2rem;
+                  flex-shrink:0;">
         ${getAvatar(writer)}
       </div>
       <div>
@@ -716,7 +744,7 @@ function openModal(workId, writerId) {
     <div class="modal-actions">
       <button class="modal-action-btn"
         onclick="shareWork(
-          \`${work.title}\`, \`${writer.name}\`
+          \`${work.title}\`,\`${writer.name}\`
         )">
         <i class="fas fa-share-alt"></i> Share
       </button>
@@ -743,7 +771,7 @@ modalOverlay.addEventListener('click', e => {
 });
 
 // ================================
-//   SHARE & PRINT
+//   SHARE AND PRINT
 // ================================
 
 function shareWork(title, author) {
@@ -790,7 +818,7 @@ function observeReveal() {
 }
 
 // ================================
-//   INIT
+//   INITIALISE
 // ================================
 
 document.addEventListener('DOMContentLoaded', () => {

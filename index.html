@@ -18,11 +18,11 @@
         <span class="logo-text">CampusQuill</span>
       </div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#featured">Featured</a></li>
-        <li><a href="#explore">Explore</a></li>
-        <li><a href="#writers">Writers</a></li>
-        <li><a href="#submit">Submit Work</a></li>
+        <li><a href="#home" onclick="smoothScroll(event,'home')">Home</a></li>
+        <li><a href="#featured" onclick="smoothScroll(event,'featured')">Featured</a></li>
+        <li><a href="#explore" onclick="smoothScroll(event,'explore')">Explore</a></li>
+        <li><a href="#writers" onclick="smoothScroll(event,'writers')">Writers</a></li>
+        <li><a href="#submit" onclick="smoothScroll(event,'submit')">Submit Work</a></li>
       </ul>
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle"
@@ -58,14 +58,21 @@
         deserve to be heard.
       </p>
       <div class="hero-buttons">
-        <a href="#explore" class="btn-primary">
+
+        <!-- ✅ FIXED BUTTONS WITH onclick -->
+        <a href="#explore"
+           class="btn-primary"
+           onclick="smoothScroll(event,'explore')">
           <i class="fas fa-book-open"></i>
           Explore Works
         </a>
-        <a href="#submit" class="btn-secondary">
+        <a href="#submit"
+           class="btn-secondary"
+           onclick="smoothScroll(event,'submit')">
           <i class="fas fa-feather-alt"></i>
           Submit Your Work
         </a>
+
       </div>
       <div class="hero-stats">
         <div class="stat-item">
@@ -286,11 +293,16 @@
           <p>Where Student Voices Find Their Words</p>
         </div>
         <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#featured">Featured</a>
-          <a href="#explore">Explore</a>
-          <a href="#writers">Writers</a>
-          <a href="#submit">Submit</a>
+          <a href="#home"
+             onclick="smoothScroll(event,'home')">Home</a>
+          <a href="#featured"
+             onclick="smoothScroll(event,'featured')">Featured</a>
+          <a href="#explore"
+             onclick="smoothScroll(event,'explore')">Explore</a>
+          <a href="#writers"
+             onclick="smoothScroll(event,'writers')">Writers</a>
+          <a href="#submit"
+             onclick="smoothScroll(event,'submit')">Submit</a>
         </div>
       </div>
       <div class="footer-bottom">

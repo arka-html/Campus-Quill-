@@ -284,6 +284,31 @@ function getAllWorks() {
 const allWorks = getAllWorks();
 
 // ================================
+//   ✅ SMOOTH SCROLL FIX
+//   Works on ALL devices including
+//   mobile and tablet!
+// ================================
+
+function smoothScroll(event, targetId) {
+  event.preventDefault();
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const navHeight = document.getElementById('navbar')
+    .getBoundingClientRect().height;
+  const targetPosition = target.getBoundingClientRect().top
+    + window.pageYOffset - navHeight;
+
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+
+  // Also close mobile nav if open
+  closeMobileNav();
+}
+
+// ================================
 //   DARK MODE
 // ================================
 
@@ -332,8 +357,8 @@ window.addEventListener('scroll', () => {
 //   MOBILE NAV
 // ================================
 
-const hamburger  = document.getElementById('hamburger');
-const navLinks   = document.getElementById('navLinks');
+const hamburger = document.getElementById('hamburger');
+const navLinks  = document.getElementById('navLinks');
 
 const navOverlay = document.createElement('div');
 navOverlay.classList.add('nav-overlay');
@@ -564,24 +589,19 @@ function renderWriters() {
 
   grid.innerHTML = writers.map(writer => `
     <div class="writer-card reveal">
-
       <div class="writer-photo">
         ${getAvatar(writer)}
       </div>
-
       <div class="writer-name">
         ${writer.name}
       </div>
-
       <div class="writer-college">
         ${writer.college}
       </div>
-
       <p class="writer-bio
          ${getBengaliClass(writer.language)}">
         "${writer.bio}"
       </p>
-
       <div class="writer-bottom">
         <div class="writer-works-count">
           <i class="fas fa-pen-nib"></i>
@@ -594,7 +614,6 @@ function renderWriters() {
           Writer since ${writer.joinedDate}
         </div>
       </div>
-
     </div>
   `).join('');
 
@@ -684,12 +703,10 @@ function openModal(workId, writerId) {
       ${work.category}
       ${getLangBadge(work.language)}
     </span>
-
     <h2 class="modal-title
         ${isBengali ? 'bengali-text' : ''}">
       ${work.title}
     </h2>
-
     <div class="modal-meta">
       <span>
         <i class="fas fa-user"></i>
@@ -704,14 +721,11 @@ function openModal(workId, writerId) {
         ${readingTime} min read
       </span>
     </div>
-
     <div class="modal-divider"></div>
-
     <div class="modal-body
          ${isBengali ? 'bengali-text' : ''}">
       ${work.content}
     </div>
-
     <div class="modal-author-section">
       <div class="author-avatar"
            style="width:50px;height:50px;
@@ -740,7 +754,6 @@ function openModal(workId, writerId) {
         </em>
       </div>
     </div>
-
     <div class="modal-actions">
       <button class="modal-action-btn"
         onclick="shareWork(

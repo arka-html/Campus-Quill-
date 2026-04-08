@@ -17,6 +17,7 @@
   --shadow: rgba(0,0,0,0.08);
   --shadow-hover: rgba(0,0,0,0.16);
   --nav-bg: rgba(253,250,246,0.95);
+  --nav-height: 70px;
 }
 
 /* --- DARK MODE --- */
@@ -44,28 +45,36 @@ body.dark-mode {
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 16px;
+  /* ✅ KEY FIX - offset scroll for fixed navbar */
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
 }
 
 body {
   font-family: 'Lora', Georgia, serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease,
+              color 0.4s ease;
   overflow-x: hidden;
 }
 
 /* --- SCROLLBAR --- */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
   border-radius: 10px;
 }
 
 /* --- SELECTION --- */
-::selection { background: var(--accent); color: #fff; }
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
 
 /* ==============================
    NAVBAR
@@ -89,7 +98,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: 70px;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -351,6 +360,10 @@ body {
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   border: 2px solid var(--accent);
+  cursor: pointer;
+  /* ✅ FIX touch on mobile */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .btn-primary:hover {
@@ -375,6 +388,10 @@ body {
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   border: 2px solid var(--accent);
+  cursor: pointer;
+  /* ✅ FIX touch on mobile */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .btn-secondary:hover {
@@ -443,12 +460,24 @@ body {
   font-style: normal;
 }
 
-.fw1 { top: 15%; left: 5%; animation-delay: 0s; font-size: 1.5rem; }
+.fw1 {
+  top: 15%; left: 5%;
+  animation-delay: 0s;
+  font-size: 1.5rem;
+}
 .fw2 { top: 70%; left: 8%; animation-delay: 3s; }
-.fw3 { top: 20%; right: 5%; animation-delay: 1.5s; font-size: 1.8rem; }
+.fw3 {
+  top: 20%; right: 5%;
+  animation-delay: 1.5s;
+  font-size: 1.8rem;
+}
 .fw4 { top: 60%; right: 10%; animation-delay: 4.5s; }
 .fw5 { top: 40%; left: 3%; animation-delay: 6s; }
-.fw6 { bottom: 20%; right: 5%; animation-delay: 2s; font-size: 1.3rem; }
+.fw6 {
+  bottom: 20%; right: 5%;
+  animation-delay: 2s;
+  font-size: 1.3rem;
+}
 
 @keyframes float-word {
   0%, 100% { transform: translateY(0px) rotate(-5deg); }
@@ -514,6 +543,9 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.4s ease;
+  /* ✅ FIX touch */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .featured-card::before {
@@ -625,7 +657,6 @@ body {
 
 /* ==============================
    LANGUAGE BADGES
-   (on works only not writers)
    ============================== */
 .lang-badge {
   display: inline-flex;
@@ -727,6 +758,8 @@ body.dark-mode .lang-badge.bengali {
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .filter-btn:hover,
@@ -750,6 +783,8 @@ body.dark-mode .lang-badge.bengali {
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .lang-filter-btn:hover,
@@ -779,6 +814,8 @@ body.dark-mode .lang-filter-btn.active {
   padding: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .work-card:hover {
@@ -809,22 +846,32 @@ body.dark-mode .lang-filter-btn.active {
   font-style: normal !important;
 }
 
-.card-title.bengali-text { font-size: 1.35rem; line-height: 1.5; }
-.work-card .card-title.bengali-text { font-size: 1.1rem; }
+.card-title.bengali-text {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.work-card .card-title.bengali-text {
+  font-size: 1.1rem;
+}
+
 .card-excerpt.bengali-text {
   font-family: 'Hind Siliguri', sans-serif !important;
   font-size: 0.95rem;
   line-height: 1.9;
   font-style: normal !important;
 }
+
 .modal-body.bengali-text {
   font-size: 1.1rem;
   line-height: 2.4;
 }
+
 .modal-title.bengali-text {
   font-size: 1.8rem;
   line-height: 1.4;
 }
+
 .writer-bio.bengali-text {
   font-family: 'Hind Siliguri', sans-serif !important;
   font-size: 0.9rem;
@@ -854,6 +901,8 @@ body.dark-mode .lang-filter-btn.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .writer-card:hover {
@@ -1026,6 +1075,8 @@ body.dark-mode .lang-filter-btn.active {
   justify-content: center;
   transition: all 0.3s ease;
   z-index: 10;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .modal-close:hover {
@@ -1110,6 +1161,8 @@ body.dark-mode .lang-filter-btn.active {
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .modal-action-btn:hover {
@@ -1276,6 +1329,8 @@ body.dark-mode .lang-filter-btn.active {
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .footer-links a:hover { color: var(--accent); }
@@ -1361,22 +1416,34 @@ body.dark-mode .lang-filter-btn.active {
   .hero-stats { gap: 1.2rem; }
   .stat-number { font-size: 2rem; }
 
-  .hero-buttons { flex-direction: column; align-items: center; }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  /* ✅ MOBILE BUTTON FIX */
   .btn-primary,
   .btn-secondary {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 
   .featured-grid,
   .works-grid,
-  .writers-grid { grid-template-columns: 1fr; }
+  .writers-grid {
+    grid-template-columns: 1fr;
+  }
 
   .section-container { padding: 70px 1.5rem; }
 
-  .footer-top { flex-direction: column; text-align: center; }
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .footer-links { justify-content: center; }
 
   .modal-box { padding: 2rem 1.5rem; }
@@ -1399,4 +1466,10 @@ body.dark-mode .lang-filter-btn.active {
   .stat-number { font-size: 1.6rem; }
   .stat-label { font-size: 0.65rem; }
   .hero-title { font-size: 2.5rem; }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.5rem;
+  }
 }

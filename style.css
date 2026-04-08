@@ -1409,7 +1409,6 @@ body.dark-mode .lang-filter-btn.active {
 
   .nav-links.open { right: 0; }
   .nav-links a { font-size: 1.1rem; }
-  .nav-overlay { display: block; }
   .hamburger { display: flex; }
 
   .hero { padding: 90px 1.5rem 60px; }

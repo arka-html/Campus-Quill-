@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CampusQuill — Where Student Voices Find Their Words</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body class="light-mode">
@@ -25,7 +25,8 @@
         <li><a href="#submit">Submit Work</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <button class="theme-toggle" id="themeToggle"
+                title="Toggle Dark Mode">
           <i class="fas fa-moon" id="themeIcon"></i>
         </button>
         <div class="hamburger" id="hamburger">
@@ -51,9 +52,9 @@
         Their <span class="hero-highlight">Words</span>
       </h1>
       <p class="hero-subtitle">
-        CampusQuill is a curated literary platform celebrating the
-        poems, stories, quotes and essays of college writers.
-        Your words deserve to be heard.
+        CampusQuill is a curated literary platform
+        celebrating the poems, stories, quotes and essays
+        of college writers. Your words deserve to be heard.
       </p>
       <div class="hero-buttons">
         <a href="#explore" class="btn-primary">
@@ -84,11 +85,11 @@
     </div>
     <div class="floating-words">
       <span class="fw fw1">poetry</span>
-      <span class="fw fw2">stories</span>
+      <span class="fw fw2">কবিতা</span>
       <span class="fw fw3">words</span>
-      <span class="fw fw4">dreams</span>
+      <span class="fw fw4">স্বপ্ন</span>
       <span class="fw fw5">prose</span>
-      <span class="fw fw6">verses</span>
+      <span class="fw fw6">গল্প</span>
     </div>
   </section>
 
@@ -116,6 +117,8 @@
           Filter, discover and immerse yourself
         </p>
       </div>
+
+      <!-- Search Bar -->
       <div class="search-bar">
         <i class="fas fa-search search-icon"></i>
         <input
@@ -125,7 +128,9 @@
           class="search-input"
         />
       </div>
-      <div class="filter-buttons">
+
+      <!-- Category Filter Buttons -->
+      <div class="filter-buttons" id="categoryFilters">
         <button class="filter-btn active" data-filter="all">
           All Works
         </button>
@@ -142,11 +147,28 @@
           <i class="fas fa-scroll"></i> Essays
         </button>
       </div>
+
+      <!-- Language Filter Buttons -->
+      <div class="filter-buttons lang-filters" id="languageFilters">
+        <button class="lang-filter-btn active" data-lang="all">
+          🌐 All Languages
+        </button>
+        <button class="lang-filter-btn" data-lang="english">
+          🇬🇧 English
+        </button>
+        <button class="lang-filter-btn" data-lang="bengali">
+          🇧🇩 বাংলা
+        </button>
+      </div>
+
+      <!-- Works Grid -->
       <div class="works-grid" id="worksGrid"></div>
+
       <div class="no-results" id="noResults" style="display:none;">
         <i class="fas fa-search"></i>
         <p>No works found. Try a different search!</p>
       </div>
+
     </div>
   </section>
 
@@ -185,8 +207,9 @@
           </h2>
           <p class="submit-desc">
             CampusQuill welcomes every voice, every story,
-            every poem. Your words have the power to move hearts.
-            Let the world read what you have written.
+            every poem — in any language. Your words have
+            the power to move hearts. Let the world read
+            what you have written.
           </p>
           <div class="submit-steps">
             <div class="submit-step">
@@ -200,14 +223,18 @@
               <div class="step-num">02</div>
               <div class="step-info">
                 <strong>Email Your Work</strong>
-                <span>Send poems or stories directly to us</span>
+                <span>
+                  Send poems or stories directly to us
+                </span>
               </div>
             </div>
             <div class="submit-step">
               <div class="step-num">03</div>
               <div class="step-info">
                 <strong>Get Published</strong>
-                <span>Your work goes live within 24-48 hours</span>
+                <span>
+                  Your work goes live within 24-48 hours
+                </span>
               </div>
             </div>
           </div>
@@ -218,8 +245,10 @@
               <i class="fas fa-user-plus"></i>
             </div>
             <h3>New Writer?</h3>
-            <p>Register first to get your personal
-               profile page on CampusQuill</p>
+            <p>
+              Register first to get your personal
+              profile page on CampusQuill
+            </p>
             <a href="YOUR_GOOGLE_FORM_LINK"
                target="_blank"
                class="btn-primary">
@@ -232,8 +261,10 @@
               <i class="fas fa-envelope"></i>
             </div>
             <h3>Already Registered?</h3>
-            <p>Simply email your work directly
-               to us anytime!</p>
+            <p>
+              Simply email your work directly
+              to us anytime!
+            </p>
             <a href="mailto:campusquill@gmail.com"
                class="btn-secondary">
               <i class="fas fa-paper-plane"></i>
@@ -265,7 +296,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 CampusQuill — Made with
+        <p>
+          © 2025 CampusQuill — Made with
           <i class="fas fa-heart"></i>
           for student writers everywhere
         </p>

@@ -1,13 +1,15 @@
 // ================================
-//   CAMPUSQUILL - JAVASCRIPT
-//   Mobile Nav Bug Fixed! ✅
+//   CAMPUSQUILL — COMPLETE JS
+//   All Features Included! ✅
 // ================================
 
 // ================================
-//   YOUR DATA - EDIT THIS ONLY!
+//   DATA — EDIT THIS ONLY!
 // ================================
 
 const writers = [
+
+  // ======= ENGLISH WRITER 1 =======
   {
     id: "priya-sharma",
     name: "Priya Sharma",
@@ -15,12 +17,14 @@ const writers = [
     year: "2nd Year, BA English",
     gmail: "priya@gmail.com",
     photo: null,
+    language: "english",
     bio: "I write when words feel like feelings I cannot speak aloud.",
     works: [
       {
         id: "first-rain",
         title: "First Rain",
         category: "Poem",
+        language: "english",
         featured: true,
         date: "January 2025",
         content: `The rain fell softly on my window,
@@ -37,18 +41,168 @@ To fall and never reach a star.`
         id: "spring-diary",
         title: "Spring Diary",
         category: "Story",
+        language: "english",
         featured: false,
         date: "February 2025",
-        content: `It was the kind of morning that makes you believe everything is forgivable.
-The sun came in sideways through the curtains and landed on the old
-diary I had not opened in three years.
+        content: `It was the kind of morning that makes you
+believe everything is forgivable.
+The sun came in sideways through the curtains
+and landed on the old diary I had not opened
+in three years.
 
-I made tea first. Then I sat down. Then I read every word she had ever
-written in those pages, and by the time I reached the last entry,
-the tea was cold and I was someone slightly different than before.`
+I made tea first. Then I sat down. Then I read
+every word she had ever written in those pages,
+and by the time I reached the last entry,
+the tea was cold and I was someone slightly
+different than before.`
       }
     ]
   },
+
+  // ======= BENGALI WRITER 1 =======
+  {
+    id: "arpita-das",
+    name: "Arpita Das",
+    college: "Presidency University",
+    year: "2nd Year, BA Bengali",
+    gmail: "arpita@gmail.com",
+    photo: null,
+    language: "bengali",
+    bio: "শব্দের মধ্যে আমি আমার জগৎ খুঁজে পাই।",
+    works: [
+      {
+        id: "akash-amar",
+        title: "আকাশ আমার",
+        category: "Poem",
+        language: "bengali",
+        featured: true,
+        date: "জানুয়ারি ২০২৫",
+        content: `আকাশ আমার মনের মতো,
+কখনো নীল, কখনো মেঘলা,
+তবুও সে থাকে, সবসময়,
+যেন এক পুরনো বন্ধু আমার।
+
+রাতের তারা যখন ওঠে,
+মনে পড়ে তোমার কথা,
+নীরবে বসে জানালা ধরে,
+লিখি আমার মনের ব্যথা।
+
+সকালবেলা পাখির ডাকে,
+ঘুম ভাঙে আমার প্রতিদিন,
+তবুও মনে থাকে একটা কথা —
+ভালোবাসা কি সত্যিই অসীম?`
+      },
+      {
+        id: "nodi-o-ami",
+        title: "নদী ও আমি",
+        category: "Poem",
+        language: "bengali",
+        featured: false,
+        date: "ফেব্রুয়ারি ২০২৫",
+        content: `নদীর কাছে গিয়ে বসি,
+জিজ্ঞেস করি তার কাছে —
+কোথায় যাও এত তাড়াতাড়ি,
+কোন সুরের টানে ছুটে চলো?
+
+নদী বলে হাসিমুখে,
+সাগর আমার গন্তব্য,
+পথ যতই কঠিন হোক,
+থামা আমার কাজ নয়।
+
+আমিও তাই চলি একদিন,
+স্বপ্নের পথে অবিরাম,
+নদীর মতো বয়ে চলি,
+জীবনের এই সংগ্রামে।`
+      }
+    ]
+  },
+
+  // ======= BENGALI WRITER 2 =======
+  {
+    id: "sourav-mondal",
+    name: "Sourav Mondal",
+    college: "Jadavpur University",
+    year: "3rd Year, BA Bengali",
+    gmail: "sourav@gmail.com",
+    photo: null,
+    language: "bengali",
+    bio: "গল্পের মধ্যে জীবন খুঁজি, জীবনের মধ্যে গল্প।",
+    works: [
+      {
+        id: "shesh-chithi",
+        title: "শেষ চিঠি",
+        category: "Story",
+        language: "bengali",
+        featured: true,
+        date: "জানুয়ারি ২০২৫",
+        content: `চিঠিটা পড়ে সে অনেকক্ষণ চুপ করে বসে রইল।
+
+জানালার বাইরে বৃষ্টি পড়ছিল। ঠান্ডা বাতাস
+ঘরের ভেতরে এসে পর্দা নাড়িয়ে দিচ্ছিল।
+সে জানত এই চিঠি একদিন আসবে।
+তবুও প্রস্তুত ছিল না সে।
+
+চিঠির শেষ লাইনটা বারবার পড়ল —
+"তোমাকে ভুলিনি, কখনো ভুলব না।
+শুধু এবার যেতে হবে।"
+
+সে চিঠিটা ভাঁজ করে বুকের কাছে রাখল।
+বৃষ্টি তখনও পড়ছিল।
+এই বৃষ্টি কি জানে কারো বিদায়ের কথা?`
+      },
+      {
+        id: "ekti-bela",
+        title: "একটি বেলা",
+        category: "Quote",
+        language: "bengali",
+        featured: false,
+        date: "ফেব্রুয়ারি ২০২৫",
+        content: `"জীবনে এমন কিছু মুহূর্ত আসে,
+যখন কথা বলতে ইচ্ছে করে না।
+শুধু চুপ করে বসে থাকতে ইচ্ছে করে,
+আর অনুভব করতে ইচ্ছে করে —
+এই পৃথিবী কতটা সুন্দর।"`
+      }
+    ]
+  },
+
+  // ======= BENGALI WRITER 3 =======
+  {
+    id: "maya-roy",
+    name: "Maya Roy",
+    college: "Calcutta University",
+    year: "1st Year, BA English",
+    gmail: "maya@gmail.com",
+    photo: null,
+    language: "bengali",
+    bio: "কলমই আমার সবচেয়ে বিশ্বস্ত বন্ধু।",
+    works: [
+      {
+        id: "alo-amar",
+        title: "আলো আমার",
+        category: "Poem",
+        language: "bengali",
+        featured: true,
+        date: "মার্চ ২০২৫",
+        content: `অন্ধকারে যখন পথ হারাই,
+তখন তুমি আসো আলো হয়ে,
+মনের কোণে যে ভয় জমেছে,
+সব সরিয়ে দাও ভালোবেসে।
+
+মায়ের হাতের পরশ যেন,
+বাবার চোখের স্নেহ যেন,
+তোমার আলো সেই কথা বলে —
+একা নও তুমি, আমি আছি।
+
+তাই যত রাত নামুক আকাশে,
+ভয় নেই আমার একটুও,
+ভেতরে যে আলো জ্বলে সদা,
+সেই আলোতেই পথ চলো।`
+      }
+    ]
+  },
+
+  // ======= ENGLISH WRITER 2 =======
   {
     id: "rahul-verma",
     name: "Rahul Verma",
@@ -56,13 +210,15 @@ the tea was cold and I was someone slightly different than before.`
     year: "3rd Year, BA English",
     gmail: "rahul@gmail.com",
     photo: null,
+    language: "english",
     bio: "Poetry is my way of making sense of things that do not make sense.",
     works: [
       {
         id: "midnight-letters",
         title: "Midnight Letters",
         category: "Poem",
-        featured: true,
+        language: "english",
+        featured: false,
         date: "January 2025",
         content: `I wrote you letters at midnight,
 That I never meant to send,
@@ -76,6 +232,8 @@ Company beneath this quiet sky.`
       }
     ]
   },
+
+  // ======= ENGLISH WRITER 3 =======
   {
     id: "sneha-gupta",
     name: "Sneha Gupta",
@@ -83,100 +241,98 @@ Company beneath this quiet sky.`
     year: "1st Year, BA English",
     gmail: "sneha@gmail.com",
     photo: null,
+    language: "english",
     bio: "Every story is someone's truth waiting to be heard.",
     works: [
       {
         id: "the-library",
         title: "The Library at 6PM",
         category: "Quote",
-        featured: true,
+        language: "english",
+        featured: false,
         date: "February 2025",
-        content: `"The library at six in the evening is the quietest kind of miracle.
-Every person there has chosen silence over everything else the world
-was offering. That, I think, is its own kind of devotion."`
+        content: `"The library at six in the evening is the
+quietest kind of miracle.
+Every person there has chosen silence over
+everything else the world was offering.
+That, I think, is its own kind of devotion."`
       }
     ]
   }
+
 ];
 
 // ================================
-//   GET ALL WORKS
+//   GET ALL WORKS FLAT
 // ================================
 
 function getAllWorks() {
-  const allWorks = [];
+  const all = [];
   writers.forEach(writer => {
     writer.works.forEach(work => {
-      allWorks.push({ ...work, writer });
+      all.push({ ...work, writer });
     });
   });
-  return allWorks;
+  return all;
 }
 
 const allWorks = getAllWorks();
 
 // ================================
-//   DARK MODE
+//   THEME / DARK MODE
 // ================================
 
 const themeToggle = document.getElementById('themeToggle');
-const themeIcon = document.getElementById('themeIcon');
-const body = document.body;
+const themeIcon   = document.getElementById('themeIcon');
+const body        = document.body;
 
-const savedTheme = localStorage.getItem('campusquill-theme') || 'light';
-applyTheme(savedTheme);
+applyTheme(
+  localStorage.getItem('campusquill-theme') || 'light'
+);
 
 function applyTheme(theme) {
   if (theme === 'dark') {
     body.classList.add('dark-mode');
     body.classList.remove('light-mode');
-    themeIcon.classList.remove('fa-moon');
-    themeIcon.classList.add('fa-sun');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
     localStorage.setItem('campusquill-theme', 'dark');
   } else {
     body.classList.add('light-mode');
     body.classList.remove('dark-mode');
-    themeIcon.classList.remove('fa-sun');
-    themeIcon.classList.add('fa-moon');
+    themeIcon.classList.replace('fa-sun', 'fa-moon');
     localStorage.setItem('campusquill-theme', 'light');
   }
 }
 
 themeToggle.addEventListener('click', () => {
-  const isDark = body.classList.contains('dark-mode');
-  applyTheme(isDark ? 'light' : 'dark');
+  applyTheme(
+    body.classList.contains('dark-mode') ? 'light' : 'dark'
+  );
 });
 
 // ================================
-//   NAVBAR SCROLL EFFECT
+//   NAVBAR SCROLL
 // ================================
 
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
 
-  // Add shadow when scrolled
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-
-  // ✅ BUG FIX - Close mobile menu when user scrolls!
+  // Close mobile nav on scroll
   if (navLinks.classList.contains('open')) {
     closeMobileNav();
   }
-
 }, { passive: true });
 
 // ================================
-//   MOBILE NAV - FULLY FIXED! ✅
+//   MOBILE NAV — BUG FIXED ✅
 // ================================
 
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+const navLinks  = document.getElementById('navLinks');
 
-// Create overlay element dynamically
+// Create overlay
 const navOverlay = document.createElement('div');
 navOverlay.classList.add('nav-overlay');
 document.body.appendChild(navOverlay);
@@ -195,31 +351,22 @@ function closeMobileNav() {
   body.style.overflow = '';
 }
 
-// Toggle on hamburger click
 hamburger.addEventListener('click', () => {
-  if (navLinks.classList.contains('open')) {
-    closeMobileNav();
-  } else {
-    openMobileNav();
-  }
+  navLinks.classList.contains('open')
+    ? closeMobileNav()
+    : openMobileNav();
 });
 
-// Close when any nav link is clicked
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    closeMobileNav();
-  });
+  link.addEventListener('click', closeMobileNav);
 });
 
-// Close when overlay (dark background) is clicked
-navOverlay.addEventListener('click', () => {
-  closeMobileNav();
-});
+navOverlay.addEventListener('click', closeMobileNav);
 
-// Close on Escape key
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeMobileNav();
+    closeModal();
   }
 });
 
@@ -227,24 +374,24 @@ document.addEventListener('keydown', (e) => {
 //   ANIMATED COUNTERS
 // ================================
 
-function animateCounter(element, target, duration = 2000) {
+function animateCounter(el, target, duration = 2000) {
   let start = 0;
   const step = target / (duration / 16);
   const timer = setInterval(() => {
     start += step;
     if (start >= target) {
-      element.textContent = target + '+';
+      el.textContent = target + '+';
       clearInterval(timer);
     } else {
-      element.textContent = Math.floor(start);
+      el.textContent = Math.floor(start);
     }
   }, 16);
 }
 
 const totalWritersEl = document.getElementById('totalWriters');
-const totalWorksEl = document.getElementById('totalWorks');
+const totalWorksEl   = document.getElementById('totalWorks');
 
-const counterObserver = new IntersectionObserver((entries) => {
+const counterObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       animateCounter(totalWritersEl, writers.length);
@@ -254,54 +401,71 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-if (document.querySelector('.hero-stats')) {
-  counterObserver.observe(document.querySelector('.hero-stats'));
-}
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) counterObserver.observe(heroStats);
 
 // ================================
-//   AVATAR HELPER
+//   HELPERS
 // ================================
 
 function getAvatar(writer) {
-  const initial = writer.name.charAt(0);
   if (writer.photo) {
-    return `<img src="images/${writer.photo}" alt="${writer.name}" />`;
+    return `<img src="images/${writer.photo}"
+                 alt="${writer.name}" />`;
   }
-  return initial;
+  return writer.name.charAt(0);
 }
-
-// ================================
-//   CATEGORY ICON HELPER
-// ================================
 
 function getCategoryIcon(category) {
   const icons = {
-    'Poem': '<i class="fas fa-feather"></i>',
-    'Story': '<i class="fas fa-book"></i>',
-    'Quote': '<i class="fas fa-quote-left"></i>',
-    'Essay': '<i class="fas fa-scroll"></i>',
-    'Flash Fiction': '<i class="fas fa-bolt"></i>'
+    'Poem':         '<i class="fas fa-feather"></i>',
+    'Story':        '<i class="fas fa-book"></i>',
+    'Quote':        '<i class="fas fa-quote-left"></i>',
+    'Essay':        '<i class="fas fa-scroll"></i>',
+    'Flash Fiction':'<i class="fas fa-bolt"></i>'
   };
   return icons[category] || '<i class="fas fa-pen"></i>';
 }
 
+function getLangBadge(language) {
+  if (language === 'bengali') {
+    return `<span class="lang-badge bengali">বাংলা</span>`;
+  }
+  return `<span class="lang-badge english">English</span>`;
+}
+
+function getBengaliClass(language) {
+  return language === 'bengali' ? 'bengali-text' : '';
+}
+
+function getExcerpt(content, length = 100) {
+  const clean = content.replace(/\n/g, ' ').trim();
+  return clean.length > length
+    ? clean.substring(0, length) + '...'
+    : clean;
+}
+
 // ================================
-//   RENDER FEATURED WORKS
+//   RENDER FEATURED
 // ================================
 
 function renderFeatured() {
-  const featuredGrid = document.getElementById('featuredGrid');
-  const featuredWorks = allWorks.filter(w => w.featured);
+  const grid = document.getElementById('featuredGrid');
+  const featured = allWorks.filter(w => w.featured);
 
-  featuredGrid.innerHTML = featuredWorks.map(work => `
+  grid.innerHTML = featured.map(work => `
     <div class="featured-card reveal"
-         onclick="openModal('${work.id}', '${work.writer.id}')">
+         onclick="openModal('${work.id}','${work.writer.id}')">
       <div class="card-category">
-        ${getCategoryIcon(work.category)} ${work.category}
+        ${getCategoryIcon(work.category)}
+        ${work.category}
+        ${getLangBadge(work.language)}
       </div>
-      <h3 class="card-title">${work.title}</h3>
-      <p class="card-excerpt">
-        ${work.content.substring(0, 120).trim()}...
+      <h3 class="card-title ${getBengaliClass(work.language)}">
+        ${work.title}
+      </h3>
+      <p class="card-excerpt ${getBengaliClass(work.language)}">
+        ${getExcerpt(work.content, 110)}
       </p>
       <div class="card-footer">
         <div class="card-author">
@@ -324,32 +488,36 @@ function renderFeatured() {
 }
 
 // ================================
-//   RENDER ALL WORKS
+//   RENDER WORKS
 // ================================
 
 function renderWorks(worksToShow = allWorks) {
-  const worksGrid = document.getElementById('worksGrid');
+  const grid      = document.getElementById('worksGrid');
   const noResults = document.getElementById('noResults');
 
   if (worksToShow.length === 0) {
-    worksGrid.innerHTML = '';
+    grid.innerHTML = '';
     noResults.style.display = 'block';
     return;
   }
 
   noResults.style.display = 'none';
 
-  worksGrid.innerHTML = worksToShow.map(work => `
+  grid.innerHTML = worksToShow.map(work => `
     <div class="work-card reveal"
-         onclick="openModal('${work.id}', '${work.writer.id}')">
+         onclick="openModal('${work.id}','${work.writer.id}')">
       <div class="card-category">
-        ${getCategoryIcon(work.category)} ${work.category}
+        ${getCategoryIcon(work.category)}
+        ${work.category}
+        ${getLangBadge(work.language)}
       </div>
-      <h3 class="card-title" style="font-size:1.2rem;">
+      <h3 class="card-title ${getBengaliClass(work.language)}"
+          style="font-size:1.15rem;">
         ${work.title}
       </h3>
-      <p class="card-excerpt" style="font-size:0.88rem;">
-        ${work.content.substring(0, 100).trim()}...
+      <p class="card-excerpt ${getBengaliClass(work.language)}"
+         style="font-size:0.88rem;">
+        ${getExcerpt(work.content, 100)}
       </p>
       <div class="card-footer" style="margin-top:1.2rem;">
         <div class="card-author">
@@ -375,24 +543,70 @@ function renderWorks(worksToShow = allWorks) {
 }
 
 // ================================
+//   RENDER WRITERS
+// ================================
+
+function renderWriters() {
+  const grid = document.getElementById('writersGrid');
+
+  grid.innerHTML = writers.map(writer => `
+    <div class="writer-card reveal">
+      <div class="writer-photo">
+        ${getAvatar(writer)}
+      </div>
+      <div class="writer-name">${writer.name}</div>
+      <div class="writer-college">
+        ${writer.college}
+        ${getLangBadge(writer.language)}
+      </div>
+      <p class="writer-bio ${getBengaliClass(writer.language)}">
+        "${writer.bio}"
+      </p>
+      <div class="writer-works-count">
+        <i class="fas fa-pen-nib"></i>
+        ${writer.works.length}
+        ${writer.works.length === 1 ? 'Work' : 'Works'} Published
+      </div>
+    </div>
+  `).join('');
+
+  observeReveal();
+}
+
+// ================================
 //   FILTER & SEARCH
 // ================================
 
-const filterBtns = document.querySelectorAll('.filter-btn');
+const filterBtns  = document.querySelectorAll('.filter-btn');
+const langBtns    = document.querySelectorAll('.lang-filter-btn');
 const searchInput = document.getElementById('searchInput');
-let activeFilter = 'all';
-let searchQuery = '';
 
+let activeCategory = 'all';
+let activeLang     = 'all';
+let searchQuery    = '';
+
+// Category filter
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    activeFilter = btn.dataset.filter;
+    activeCategory = btn.dataset.filter;
     applyFilters();
   });
 });
 
-searchInput.addEventListener('input', (e) => {
+// Language filter
+langBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    langBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeLang = btn.dataset.lang;
+    applyFilters();
+  });
+});
+
+// Search
+searchInput.addEventListener('input', e => {
   searchQuery = e.target.value.toLowerCase().trim();
   applyFilters();
 });
@@ -400,8 +614,16 @@ searchInput.addEventListener('input', (e) => {
 function applyFilters() {
   let filtered = allWorks;
 
-  if (activeFilter !== 'all') {
-    filtered = filtered.filter(w => w.category === activeFilter);
+  if (activeCategory !== 'all') {
+    filtered = filtered.filter(
+      w => w.category === activeCategory
+    );
+  }
+
+  if (activeLang !== 'all') {
+    filtered = filtered.filter(
+      w => w.language === activeLang
+    );
   }
 
   if (searchQuery) {
@@ -415,80 +637,91 @@ function applyFilters() {
 }
 
 // ================================
-//   RENDER WRITERS
-// ================================
-
-function renderWriters() {
-  const writersGrid = document.getElementById('writersGrid');
-
-  writersGrid.innerHTML = writers.map(writer => `
-    <div class="writer-card reveal">
-      <div class="writer-photo">
-        ${getAvatar(writer)}
-      </div>
-      <div class="writer-name">${writer.name}</div>
-      <div class="writer-college">${writer.college}</div>
-      <p class="writer-bio">"${writer.bio}"</p>
-      <div class="writer-works-count">
-        <i class="fas fa-pen-nib"></i>
-        ${writer.works.length}
-        ${writer.works.length === 1 ? 'Work' : 'Works'} Published
-      </div>
-    </div>
-  `).join('');
-
-  observeReveal();
-}
-
-// ================================
 //   MODAL
 // ================================
 
 const modalOverlay = document.getElementById('modalOverlay');
-const modalClose = document.getElementById('modalClose');
+const modalClose   = document.getElementById('modalClose');
 const modalContent = document.getElementById('modalContent');
 
 function openModal(workId, writerId) {
   const writer = writers.find(w => w.id === writerId);
-  const work = writer.works.find(w => w.id === workId);
-  const readingTime = Math.ceil(work.content.split(' ').length / 200);
+  const work   = writer.works.find(w => w.id === workId);
+
+  const readingTime = Math.max(
+    1, Math.ceil(work.content.split(' ').length / 200)
+  );
+  const isBengali = work.language === 'bengali';
 
   modalContent.innerHTML = `
     <span class="modal-category">
-      ${getCategoryIcon(work.category)} ${work.category}
+      ${getCategoryIcon(work.category)}
+      ${work.category}
+      ${getLangBadge(work.language)}
     </span>
-    <h2 class="modal-title">${work.title}</h2>
+
+    <h2 class="modal-title
+        ${isBengali ? 'bengali-text' : ''}">
+      ${work.title}
+    </h2>
+
     <div class="modal-meta">
-      <span><i class="fas fa-user"></i> ${writer.name}</span>
-      <span><i class="fas fa-calendar"></i> ${work.date}</span>
+      <span>
+        <i class="fas fa-user"></i> ${writer.name}
+      </span>
+      <span>
+        <i class="fas fa-calendar"></i> ${work.date}
+      </span>
       <span>
         <i class="fas fa-clock"></i>
-        ${readingTime < 1 ? 1 : readingTime} min read
+        ${readingTime} min read
       </span>
     </div>
+
     <div class="modal-divider"></div>
-    <div class="modal-body">${work.content}</div>
+
+    <div class="modal-body
+         ${isBengali ? 'bengali-text' : ''}">
+      ${work.content}
+    </div>
+
     <div class="modal-author-section">
       <div class="author-avatar"
-           style="width:50px;height:50px;font-size:1.2rem;">
+           style="width:50px;height:50px;
+                  font-size:1.2rem;flex-shrink:0;">
         ${getAvatar(writer)}
       </div>
       <div>
-        <strong style="font-family:'Playfair Display',serif;
-                 color:var(--text-primary);display:block;">
+        <strong
+          style="font-family:'Playfair Display',serif;
+                 color:var(--text-primary);
+                 display:block;
+                 font-size:1rem;">
           ${writer.name}
         </strong>
-        <span style="font-size:0.82rem;color:var(--text-muted);">
+        <span style="font-size:0.82rem;
+                     color:var(--text-muted);">
           ${writer.year} · ${writer.college}
         </span>
+        <em class="${getBengaliClass(writer.language)}"
+            style="font-size:0.8rem;
+                   color:var(--text-muted);
+                   display:block;
+                   margin-top:0.3rem;">
+          "${writer.bio}"
+        </em>
       </div>
     </div>
+
     <div class="modal-actions">
       <button class="modal-action-btn"
-        onclick="shareWork('${work.title}', '${writer.name}')">
+        onclick="shareWork(
+          \`${work.title}\`, \`${writer.name}\`
+        )">
         <i class="fas fa-share-alt"></i> Share
       </button>
-      <button class="modal-action-btn" onclick="printWork()">
+      <button class="modal-action-btn"
+              onclick="printWork()">
         <i class="fas fa-print"></i> Print
       </button>
     </div>
@@ -505,15 +738,8 @@ function closeModal() {
 
 modalClose.addEventListener('click', closeModal);
 
-modalOverlay.addEventListener('click', (e) => {
+modalOverlay.addEventListener('click', e => {
   if (e.target === modalOverlay) closeModal();
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeModal();
-    closeMobileNav();
-  }
 });
 
 // ================================
@@ -521,16 +747,21 @@ document.addEventListener('keydown', (e) => {
 // ================================
 
 function shareWork(title, author) {
-  const text = `Read "${title}" by ${author} on CampusQuill! ✍️`;
+  const text =
+    `Read "${title}" by ${author} on CampusQuill! ✍️`;
   if (navigator.share) {
     navigator.share({
       title: 'CampusQuill',
-      text: text,
+      text,
       url: window.location.href
     });
   } else {
-    const url = `https://wa.me/?text=${encodeURIComponent(text + ' ' + window.location.href)}`;
-    window.open(url, '_blank');
+    window.open(
+      `https://wa.me/?text=${encodeURIComponent(
+        text + ' ' + window.location.href
+      )}`,
+      '_blank'
+    );
   }
 }
 
@@ -543,8 +774,10 @@ function printWork() {
 // ================================
 
 function observeReveal() {
-  const reveals = document.querySelectorAll('.reveal:not(.visible)');
-  const observer = new IntersectionObserver((entries) => {
+  const reveals = document.querySelectorAll(
+    '.reveal:not(.visible)'
+  );
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
@@ -557,7 +790,7 @@ function observeReveal() {
 }
 
 // ================================
-//   INITIALISE
+//   INIT
 // ================================
 
 document.addEventListener('DOMContentLoaded', () => {

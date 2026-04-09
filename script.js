@@ -132,30 +132,31 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
   },
 
   // ======= Arka Samaddar =======
-  {
-    id: "arka-samaddar",
-    name: "Arka Samaddar",
-    college: "Memari College",
-    year: "4 Year, English Honours with Research",
-    gmail: "arkasamaddar.mym@gmail.com",
-    photo: "admin.jpeg",
-    language: "bengali, english",
-    bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
-    joinedDate: "April 2026",
-    works: [
-      {
-        id: "heavenly-stairs",
-        title: "Oh God led me to the stairs to Heaven",
-        category: "Quote",
-        language: "english",
-        featured: true,
-        date: "April 2026",
-        content: `Oh God led me to the stairs to heaven,
-  I've seen all beautiful things in this Earth 
-  And nothing's left to see more beautiful than thee.`
-      },
-    ]
-  },
+{
+  id: "arka-samaddar",
+  name: "Arka Samaddar",
+  college: "Memari College",
+  year: "4th Year, English Honours with Research",
+  gmail: "arkasamaddar.mym@gmail.com",
+  photo: "admin.jpeg",
+  language: "english",
+  bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
+  joinedDate: "April 2026",
+  isFounder: true,
+  works: [
+    {
+      id: "heavenly-stairs",
+      title: "Oh God led me to the stairs to Heaven",
+      category: "Quote",
+      language: "english",
+      featured: true,
+      date: "April 2026",
+      content: `Oh God led me to the stairs to heaven,
+I've seen all beautiful things in this Earth
+And nothing's left to see more beautiful than thee.`
+    }
+  ]
+},
   // ======= Ankita Mondal  =======
    {
     id: "ankita-mondal",
@@ -470,7 +471,9 @@ function renderFeatured() {
             ${getAvatar(work.writer)}
           </div>
           <div class="author-info">
-            <strong>${work.writer.name}</strong>
+            <strong>
+              ${work.writer.name}
+            </strong>
             <span>${work.writer.year}</span>
           </div>
         </div>
@@ -483,7 +486,6 @@ function renderFeatured() {
 
   observeReveal();
 }
-
 // ================================
 //   RENDER WORKS
 // ================================
@@ -545,7 +547,6 @@ function renderWorks(worksToShow = allWorks) {
 
   observeReveal();
 }
-
 // ================================
 //   RENDER WRITERS
 // ================================
@@ -554,20 +555,34 @@ function renderWriters() {
   const grid = document.getElementById('writersGrid');
 
   grid.innerHTML = writers.map(writer => `
-    <div class="writer-card reveal">
+    <div class="${writer.isFounder
+      ? 'writer-card founder-card reveal'
+      : 'writer-card reveal'}">
+
       <div class="writer-photo">
         ${getAvatar(writer)}
       </div>
+
       <div class="writer-name">
         ${writer.name}
       </div>
+
       <div class="writer-college">
         ${writer.college}
       </div>
+
+      ${writer.isFounder
+        ? `<div class="founder-badge">
+             👑 Founder and Editor
+           </div>`
+        : ''
+      }
+
       <p class="writer-bio
          ${getBengaliClass(writer.language)}">
         "${writer.bio}"
       </p>
+
       <div class="writer-bottom">
         <div class="writer-works-count">
           <i class="fas fa-pen-nib"></i>
@@ -580,12 +595,12 @@ function renderWriters() {
           Writer since ${writer.joinedDate}
         </div>
       </div>
+
     </div>
   `).join('');
 
   observeReveal();
 }
-
 // ================================
 //   FILTER AND SEARCH
 // ================================

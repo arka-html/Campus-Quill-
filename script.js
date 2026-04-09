@@ -136,7 +136,7 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
   id: "arka-samaddar",
   name: "Arka Samaddar",
   college: "Memari College",
-  year: "4th Year, English Honours with Research",
+  year: "4 Year, English Honours with Research",
   gmail: "arkasamaddar.mym@gmail.com",
   photo: "admin.jpeg",
   language: "english",

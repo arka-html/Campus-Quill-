@@ -88,7 +88,7 @@ For every piece of you still lives in me.`
         title: "দৃষ্টি উন্মোচন",
         category: "Poem",
         language: "bengali",
-        featured: false,
+        featured: true,
         date: "April 2026",
         content: `হঠাৎ চক্ষু উন্মোচনে দেখিলাম
   দুরন্ত পৃথিবীর চলন্ত কোনো পথিকের,
@@ -151,8 +151,45 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
         featured: true,
         date: "April 2026",
         content: `Oh God led me to the stairs to heaven,
-I've seen all beautiful things in this Earth 
-And nothing's left to see more beautiful than thee.`
+  I've seen all beautiful things in this Earth 
+  And nothing's left to see more beautiful than thee.`
+      },
+    ]
+  },
+  // ======= Ankita Mondal  =======
+   {
+    id: "ankita-mondal",
+    name: "Ankita Mondal ",
+    college: "Memari College",
+    year: "4 Year, English Honours with Research",
+    gmail: "anktamondal2006@gmail.com",
+    photo: "ankita.jpg",
+    language: "bengali",
+    bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
+    joinedDate: "April 2026",
+    works: [
+      {
+        id: "ক্যাকটাস ",
+        title: "ক্যাকটাস ",
+        category: "Poem",
+        language: "bengali",
+        featured: true,
+        date: "April 2026",
+        content: `একটু অযত্নে গোলাপ মারা যায় 
+  কিন্তু ক্যাকটাসের কোনো যত্ন লাগে না 
+  হাজার রুক্ষতার মাঝেও বাঁচার রসদ সে জোগাড় করে ।
+  রুক্ষতা কে সে আঁকড়ে বাঁচার চেষ্টা করে।
+  ভালোবাসাও তেমনই, যে ভালবাসবে সে তোমার ভালো খারাপ সবটা নিয়ে যে তুমি সেই তুমি কে ভালোবাসবে ।
+  গোলাপের মত অল্পতেই ছেড়ে যাবে না নষ্ট হবে না। বরং ক্যাকটাসের মত বাঁচার কারণ খুঁজবে।
+  তোমাকে আঁকড়ে ধরে রাখবে, কিন্তু ক্যাকটাসও তো শেষ হয়...
+  অল্প জলের প্রয়োজন তারও হয়।তাই তুমি যদি তোমার জীবনের ক্যাকটাসকে দিন শেষে একটু জল ও না দাও তাহলে সেও সরে যাবে তোমার জীবন থেকে...
+  তাই তোমাকে যে ভালোবাসে যে অপেক্ষা করে তোমার জন্য...
+  দিনে একটু সময় তাকেও দাও।
+  ভালোবাসা সেটা না যেটাতে সারা দিন সময় দিতে হয় কথা বলতে হয়।
+  ভালোবাসা সেটা যেটা দিনে একটা কথা 
+  " আমি ঠিক আছি " এতেই খুশি হয় অপর দিকের মানুষটা ।
+  তাই "গোলাপ হলো প্রেম...
+  আর ক্যাকটাস হলো ভালোবাসা " ।`
       },
     ]
   }

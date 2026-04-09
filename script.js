@@ -15,7 +15,7 @@ const writers = [
     college: "Memari College",
     year: "4 Year, English Honours with Research",
     gmail: "mrittikakonar@gmail.com",
-    photo: "mrittika.jpg",
+    photo: "mrittika.jpeg",
     language: "english",
     bio: "শব্দজাল বুনি আপন ছন্দে!",
     joinedDate: "April 2026",

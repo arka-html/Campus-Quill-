@@ -43,7 +43,7 @@ I wait to touch your warmth, to breath, to feel.
 
 So, find me, love, in all we used to be, 
 For every piece of you still lives in me.`
-      },/*
+      }/*,
       {
         id: "spring-diary",
         title: "Spring Diary",

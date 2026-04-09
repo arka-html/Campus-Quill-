@@ -100,7 +100,7 @@ Even mind falls in acute sickness!!`
       {
         id: "heavenly-stairs",
         title: "Oh God led me to the stairs to Heaven",
-        category: "Quotes",
+        category: "quote",
         language: "english",
         featured: true,
         date: "April 2026",

@@ -7,37 +7,43 @@
 // ================================
 
 const writers = [
-/*
+
   // ======= ENGLISH WRITER 1 =======
   
   {
-    id: "priya-sharma",
-    name: "Priya Sharma",
-    college: "Delhi College of Arts",
-    year: "2nd Year, BA English",
-    gmail: "priya@gmail.com",
-    photo: null,
+    id: "mrittika-konar",
+    name: "Mrittika Konar",
+    college: "Memari College ",
+    year: "2nd Year,English Honours with Research",
+    gmail: "mrittikakonar@gmail.com",
+    photo: "mrittika.jpg",
     language: "english",
-    bio: "I write when words feel like feelings I cannot speak aloud.",
-    joinedDate: "January 2025",
+    bio: "",
+    joinedDate: "9 April 2026",
     works: [
       {
-        id: "first-rain",
-        title: "First Rain",
+        id: "find-me",
+        title: "Find Me",
         category: "Poem",
         language: "english",
         featured: true,
-        date: "January 2025",
-        content: `The rain fell softly on my window,
-Like words I never said to you,
-Each drop a memory dissolving,
-Into the grey of something new.
+        date: "April 2026",
+        content: `Find me your favourite perfume in the air,
+That scent that bloomed the night you held me close. 
+Find me the warmth your pillow used to wear,
+The echo where we spoke in geltle haze.
 
-I pressed my palm against the glass,
-And watched the world go blurred and far,
-Perhaps the rain knows how it feels,
-To fall and never reach a star.`
-      },
+Find me your favourite song playlist again, Let every note remember how we swayed.
+Find me our monsoon dating day, the rain, That kissed our hands before the sky had grayed.
+
+Find me in letter you forgot to send,
+In folds of dreams that still recall my name, 
+Find me in my sunflower era still, 
+I wait to touch your warmth, to breath, to feel.
+
+So, find me, love, in all we used to be, 
+For every piece of you still lives in me.`
+      },/*
       {
         id: "spring-diary",
         title: "Spring Diary",

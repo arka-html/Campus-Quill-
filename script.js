@@ -13,7 +13,7 @@ const writers = [
     id: "mrittika-konar",
     name: "Mrittika Konar",
     college: "Memari College",
-    year: "2nd Year, English Honours with Research",
+    year: "4 Year, English Honours with Research",
     gmail: "mrittikakonar@gmail.com",
     photo: "mrittika.jpg",
     language: "english",
@@ -50,7 +50,7 @@ For every piece of you still lives in me.`
         title: "Sick Heart",
         category: "Poem",
         language: "english",
-        featured: true,
+        featured: false,
         date: "April 2026",
         content: `My heart is sick, aching 
 It cannot speak of its desires, 
@@ -76,7 +76,7 @@ Even mind falls in acute sickness!!`
     id: "shreyasi-singha-roy",
     name: "Shreyasi Singha Roy",
     college: "Memari College",
-    year: "2nd Year, BA English",
+    year: "3 Year, BA English",
     gmail: "shreyasisingharoy1@gmail.com",
     photo: "shreyasi.jpg",
     language: "bengali",
@@ -85,42 +85,31 @@ Even mind falls in acute sickness!!`
     works: []
   },
 
-];
-/*
-  // ======= BENGALI WRITER 1 =======
+  // ======= Arka Samaddar =======
   {
-    id: "arpita-das",
-    name: "Arpita Das",
-    college: "Presidency University",
-    year: "2nd Year, BA Bengali",
-    gmail: "arpita@gmail.com",
-    photo: null,
-    language: "bengali",
+    id: "arka-samaddar",
+    name: "Arka Samaddar",
+    college: "Memari College",
+    year: "4 Year, English Honours with Research",
+    gmail: "arkasamaddar.mym@gmail.com",
+    photo: "admin.jpg",
+    language: "bengali, english",
     bio: "শব্দের মধ্যে আমি আমার জগৎ খুঁজে পাই।",
-    joinedDate: "January 2025",
+    joinedDate: "April 2026",
     works: [
       {
-        id: "akash-amar",
-        title: "আকাশ আমার",
-        category: "Poem",
-        language: "bengali",
+        id: "heavenly-stairs",
+        title: "Oh God led me to the stairs to Heaven",
+        category: "Quotes",
+        language: "english",
         featured: true,
-        date: "জানুয়ারি ২০২৫",
-        content: `আকাশ আমার মনের মতো,
-কখনো নীল, কখনো মেঘলা,
-তবুও সে থাকে, সবসময়,
-যেন এক পুরনো বন্ধু আমার।
-
-রাতের তারা যখন ওঠে,
-মনে পড়ে তোমার কথা,
-নীরবে বসে জানালা ধরে,
-লিখি আমার মনের ব্যথা।
-
-সকালবেলা পাখির ডাকে,
-ঘুম ভাঙে আমার প্রতিদিন,
-তবুও মনে থাকে একটা কথা —
-ভালোবাসা কি সত্যিই অসীম?`
+        date: "April 2026",
+        content: `Oh God led me to the stairs to heaven,
+I've seen all beautiful things in this Earth 
+And nothing's left to see more beautiful than thee.`
       },
+    ]
+  }/*
       {
         id: "nodi-o-ami",
         title: "নদী ও আমি",
@@ -294,8 +283,8 @@ That, I think, is its own kind of devotion."`
   }
  
 
-];
- COMMENTED OUT - SAMPLE DATA */
+
+ COMMENTED OUT - SAMPLE DATA */];
 
 // ================================
 //   GET ALL WORKS

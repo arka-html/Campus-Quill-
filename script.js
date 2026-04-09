@@ -94,13 +94,13 @@ Even mind falls in acute sickness!!`
     gmail: "arkasamaddar.mym@gmail.com",
     photo: "admin.jpg",
     language: "bengali, english",
-    bio: "শব্দের মধ্যে আমি আমার জগৎ খুঁজে পাই।",
+    bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
     joinedDate: "April 2026",
     works: [
       {
         id: "heavenly-stairs",
         title: "Oh God led me to the stairs to Heaven",
-        category: "quote",
+        category: "Quote",
         language: "english",
         featured: true,
         date: "April 2026",
@@ -109,182 +109,8 @@ I've seen all beautiful things in this Earth
 And nothing's left to see more beautiful than thee.`
       },
     ]
-  }/*
-      {
-        id: "nodi-o-ami",
-        title: "নদী ও আমি",
-        category: "Poem",
-        language: "bengali",
-        featured: false,
-        date: "ফেব্রুয়ারি ২০২৫",
-        content: `নদীর কাছে গিয়ে বসি,
-জিজ্ঞেস করি তার কাছে —
-কোথায় যাও এত তাড়াতাড়ি,
-কোন সুরের টানে ছুটে চলো?
-
-নদী বলে হাসিমুখে,
-সাগর আমার গন্তব্য,
-পথ যতই কঠিন হোক,
-থামা আমার কাজ নয়।
-
-আমিও তাই চলি একদিন,
-স্বপ্নের পথে অবিরাম,
-নদীর মতো বয়ে চলি,
-জীবনের এই সংগ্রামে।`
-      }
-    ]
-  },
-
-  // ======= BENGALI WRITER 2 =======
-  {
-    id: "sourav-mondal",
-    name: "Sourav Mondal",
-    college: "Jadavpur University",
-    year: "3rd Year, BA Bengali",
-    gmail: "sourav@gmail.com",
-    photo: null,
-    language: "bengali",
-    bio: "গল্পের মধ্যে জীবন খুঁজি, জীবনের মধ্যে গল্প।",
-    joinedDate: "January 2025",
-    works: [
-      {
-        id: "shesh-chithi",
-        title: "শেষ চিঠি",
-        category: "Story",
-        language: "bengali",
-        featured: true,
-        date: "জানুয়ারি ২০২৫",
-        content: `চিঠিটা পড়ে সে অনেকক্ষণ চুপ করে বসে রইল।
-
-জানালার বাইরে বৃষ্টি পড়ছিল। ঠান্ডা বাতাস
-ঘরের ভেতরে এসে পর্দা নাড়িয়ে দিচ্ছিল।
-সে জানত এই চিঠি একদিন আসবে।
-তবুও প্রস্তুত ছিল না সে।
-
-চিঠির শেষ লাইনটা বারবার পড়ল —
-"তোমাকে ভুলিনি, কখনো ভুলব না।
-শুধু এবার যেতে হবে।"
-
-সে চিঠিটা ভাঁজ করে বুকের কাছে রাখল।
-বৃষ্টি তখনও পড়ছিল।
-এই বৃষ্টি কি জানে কারো বিদায়ের কথা?`
-      },
-      {
-        id: "ekti-bela",
-        title: "একটি বেলা",
-        category: "Quote",
-        language: "bengali",
-        featured: false,
-        date: "ফেব্রুয়ারি ২০২৫",
-        content: `"জীবনে এমন কিছু মুহূর্ত আসে,
-যখন কথা বলতে ইচ্ছে করে না।
-শুধু চুপ করে বসে থাকতে ইচ্ছে করে,
-আর অনুভব করতে ইচ্ছে করে —
-এই পৃথিবী কতটা সুন্দর।"`
-      }
-    ]
-  },
-
-  // ======= BENGALI WRITER 3 =======
-  {
-    id: "maya-roy",
-    name: "Maya Roy",
-    college: "Calcutta University",
-    year: "1st Year, BA English",
-    gmail: "maya@gmail.com",
-    photo: null,
-    language: "bengali",
-    bio: "কলমই আমার সবচেয়ে বিশ্বস্ত বন্ধু।",
-    joinedDate: "March 2025",
-    works: [
-      {
-        id: "alo-amar",
-        title: "আলো আমার",
-        category: "Poem",
-        language: "bengali",
-        featured: true,
-        date: "মার্চ ২০২৫",
-        content: `অন্ধকারে যখন পথ হারাই,
-তখন তুমি আসো আলো হয়ে,
-মনের কোণে যে ভয় জমেছে,
-সব সরিয়ে দাও ভালোবেসে।
-
-মায়ের হাতের পরশ যেন,
-বাবার চোখের স্নেহ যেন,
-তোমার আলো সেই কথা বলে —
-একা নও তুমি, আমি আছি।
-
-তাই যত রাত নামুক আকাশে,
-ভয় নেই আম��র একটুও,
-ভেতরে যে আলো জ্বলে সদা,
-সেই আলোতেই পথ চলো।`
-      }
-    ]
-  },
-
-  // ======= ENGLISH WRITER 2 =======
-  {
-    id: "rahul-verma",
-    name: "Rahul Verma",
-    college: "City College",
-    year: "3rd Year, BA English",
-    gmail: "rahul@gmail.com",
-    photo: null,
-    language: "english",
-    bio: "Poetry is my way of making sense of things that do not make sense.",
-    joinedDate: "January 2025",
-    works: [
-      {
-        id: "midnight-letters",
-        title: "Midnight Letters",
-        category: "Poem",
-        language: "english",
-        featured: false,
-        date: "January 2025",
-        content: `I wrote you letters at midnight,
-That I never meant to send,
-Words that lived between the pages,
-Of a story with no end.
-
-The ink has dried, the paper yellowed,
-Still I write, I do not know why,
-Perhaps because the letters keep me,
-Company beneath this quiet sky.`
-      }
-    ]
-  },
-
-  // ======= ENGLISH WRITER 3 =======
-  {
-    id: "sneha-gupta",
-    name: "Sneha Gupta",
-    college: "Morning Light College",
-    year: "1st Year, BA English",
-    gmail: "sneha@gmail.com",
-    photo: null,
-    language: "english",
-    bio: "Every story is someone's truth waiting to be heard.",
-    joinedDate: "February 2025",
-    works: [
-      {
-        id: "the-library",
-        title: "The Library at 6PM",
-        category: "Quote",
-        language: "english",
-        featured: false,
-        date: "February 2025",
-        content: `"The library at six in the evening is the
-quietest kind of miracle.
-Every person there has chosen silence over
-everything else the world was offering.
-That, I think, is its own kind of devotion."`
-      }
-    ]
   }
- 
-
-
- COMMENTED OUT - SAMPLE DATA */];
+];
 
 // ================================
 //   GET ALL WORKS

@@ -192,7 +192,45 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
   আর ক্যাকটাস হলো ভালোবাসা " ।`
       },
     ]
-  }
+  },
+  // ======= Lokesh Sahani =======
+  {
+    id: "lokesh-sahani",
+    name: "Lokesh Sahani",
+    college: "Memari College",
+    year: "4 Year, English Honours with Research",
+    gmail: "lokeshsahani200@gmail.com",
+    photo: "lokesh-sahani.jpeg",
+    language: "bengali, english, hinglish",
+    bio: "",
+    joinedDate: "April 2026",
+    works: [
+      {
+        id: "stream-eternal-merge",
+        title: "Stream's Eternal Merge",
+        category: "Poem",
+        language: "english",
+        featured: true,
+        date: "April 2026",
+        content: `A little stream longs for a massive dream ,
+        once it urges to merge in ocean .
+        Holding the brutal truth of the past,
+        requires to rewrite, the ending at last.
+
+        Sooth'ng around the sea ,
+        left behind the source.
+        Disclos'ng the matter of love 
+        highly luxurious even death .
+        Profound the urge of union
+        always haunt'ng the lifeforce.
+
+        Untill it emerges into sea once,
+        ignor'ng all possibilities of lust..
+        greet of love, hurt become nonce,
+        loving desire, being furious not fast.`
+      },
+    ]
+  },
 ];
 
 // ================================

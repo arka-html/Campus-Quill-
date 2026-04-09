@@ -80,7 +80,7 @@ Even mind falls in acute sickness!!`
     gmail: "shreyasisingharoy1@gmail.com",
     photo: "shreyasi.jpg",
     language: "bengali",
-    bio: null,
+    //bio: "শব্দের অপেক্ষায় আছি।",
     joinedDate: "April 2026",
     works: []
   },

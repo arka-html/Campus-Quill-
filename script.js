@@ -165,7 +165,7 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
     gmail: "anktamondal2006@gmail.com",
     photo: "ankita.jpg",
     language: "bengali",
-    bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
+    bio: "",
     joinedDate: "April 2026",
     works: [
       {

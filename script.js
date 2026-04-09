@@ -71,58 +71,22 @@ Even mind falls in acute sickness!!`
     ]
   },
 
-  /* COMMENTED OUT - SAMPLE DATA
-  // ======= ENGLISH WRITER 1 =======
+  // ======= SHREYASI SINGHA ROY =======
   {
-    id: "priya-sharma",
-    name: "Priya Sharma",
-    college: "Delhi College of Arts",
+    id: "shreyasi-singha-roy",
+    name: "Shreyasi Singha Roy",
+    college: "Memari College",
     year: "2nd Year, BA English",
-    gmail: "priya@gmail.com",
-    photo: null,
-    language: "english",
-    bio: "I write when words feel like feelings I cannot speak aloud.",
-    joinedDate: "January 2025",
-    works: [
-      {
-        id: "first-rain",
-        title: "First Rain",
-        category: "Poem",
-        language: "english",
-        featured: true,
-        date: "January 2025",
-        content: `The rain fell softly on my window,
-Like words I never said to you,
-Each drop a memory dissolving,
-Into the grey of something new.
-
-I pressed my palm against the glass,
-And watched the world go blurred and far,
-Perhaps the rain knows how it feels,
-To fall and never reach a star.`
-      },
-      {
-        id: "spring-diary",
-        title: "Spring Diary",
-        category: "Story",
-        language: "english",
-        featured: false,
-        date: "February 2025",
-        content: `It was the kind of morning that makes you
-believe everything is forgivable.
-The sun came in sideways through the curtains
-and landed on the old diary I had not opened
-in three years.
-
-I made tea first. Then I sat down. Then I read
-every word she had ever written in those pages,
-and by the time I reached the last entry,
-the tea was cold and I was someone slightly
-different than before.`
-      }
-    ]
+    gmail: "shreyasisingharoy1@gmail.com",
+    photo: "shreyasi.jpg",
+    language: "bengali",
+    bio: "শব্দের অপেক্ষায় আছি।",
+    joinedDate: "April 2026",
+    works: []
   },
 
+];
+/*
   // ======= BENGALI WRITER 1 =======
   {
     id: "arpita-das",
@@ -328,9 +292,10 @@ That, I think, is its own kind of devotion."`
       }
     ]
   }
-  COMMENTED OUT - SAMPLE DATA */
+ 
 
 ];
+ COMMENTED OUT - SAMPLE DATA */
 
 // ================================
 //   GET ALL WORKS

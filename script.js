@@ -92,7 +92,7 @@ Even mind falls in acute sickness!!`
     college: "Memari College",
     year: "4 Year, English Honours with Research",
     gmail: "arkasamaddar.mym@gmail.com",
-    photo: "admin.jpg",
+    photo: "admin.jpeg",
     language: "bengali, english",
     bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
     joinedDate: "April 2026",

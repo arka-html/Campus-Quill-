@@ -44,6 +44,29 @@ I wait to touch your warmth, to breathe, to feel.
 
 So, find me, love, in all we used to be,
 For every piece of you still lives in me.`
+      },
+      {
+        id: "sick-heart",
+        title: "Sick Heart",
+        category: "Poem",
+        language: "english",
+        featured: true,
+        date: "April 2026",
+        content: `My heart is sick, aching 
+It cannot speak of its desires, 
+It cannot share its feelings and emotions.
+
+But poetry can write, can feel, can sing songs in times of sorrow, 
+Weaving a web of words in my mind-land.
+
+Oh! If it were a rainbow, a follower of rain,
+To sing like a bird in dejection before the onset of dawn.
+Dancing with joy in glossy sunlight, 
+To win the shepherd's heart at twilight.
+
+But Oh! too far the reality 
+Too much far, 
+Even mind falls in acute sickness!!`
       }
     ]
   },

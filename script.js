@@ -7,8 +7,9 @@
 // ================================
 
 const writers = [
-
+/*
   // ======= ENGLISH WRITER 1 =======
+  
   {
     id: "priya-sharma",
     name: "Priya Sharma",
@@ -263,7 +264,7 @@ everything else the world was offering.
 That, I think, is its own kind of devotion."`
       }
     ]
-  }
+  }*/
 
 ];
 

@@ -17,7 +17,7 @@ const writers = [
     gmail: "mrittikakonar@gmail.com",
     photo: "mrittika.jpg",
     language: "english",
-    bio: "Every piece of you still lives in me.",
+    bio: "শব্দজাল বুনি আপন ছন্দে!",
     joinedDate: "April 2026",
     works: [
       {
@@ -53,20 +53,20 @@ For every piece of you still lives in me.`
         featured: false,
         date: "April 2026",
         content: `My heart is sick, aching 
-It cannot speak of its desires, 
-It cannot share its feelings and emotions.
+  It cannot speak of its desires, 
+  It cannot share its feelings and emotions.
 
-But poetry can write, can feel, can sing songs in times of sorrow, 
-Weaving a web of words in my mind-land.
+  But poetry can write, can feel, can sing songs in times of sorrow, 
+  Weaving a web of words in my mind-land.
 
-Oh! If it were a rainbow, a follower of rain,
-To sing like a bird in dejection before the onset of dawn.
-Dancing with joy in glossy sunlight, 
-To win the shepherd's heart at twilight.
+  Oh! If it were a rainbow, a follower of rain,
+  To sing like a bird in dejection before the onset of dawn.
+  Dancing with joy in glossy sunlight, 
+  To win the shepherd's heart at twilight.
 
-But Oh! too far the reality 
-Too much far, 
-Even mind falls in acute sickness!!`
+  But Oh! too far the reality 
+  Too much far, 
+  Even mind falls in acute sickness!!`
       }
     ]
   },
@@ -80,9 +80,55 @@ Even mind falls in acute sickness!!`
     gmail: "shreyasisingharoy1@gmail.com",
     photo: "shreyasi.jpg",
     language: "bengali",
-    bio: "শব্দের অপেক্ষায় আছি।",
+    bio: "Beyond time and form, the self dissolves into one infinite silence",
     joinedDate: "April 2026",
-    works: []
+    works: [
+      {
+        id: "দৃষ্টি-উন্মোচন",
+        title: "দৃষ্টি উন্মোচন",
+        category: "Poem",
+        language: "bengali",
+        featured: false,
+        date: "April 2026",
+        content: `হঠাৎ চক্ষু উন্মোচনে দেখিলাম
+  দুরন্ত পৃথিবীর চলন্ত কোনো পথিকের,
+  নিকট আসিয়া হঠাৎ স্তব্ধ হওয়া জগৎ 
+  আবার নিজের ছন্দে চলিছে।
+
+  শূন্য হস্তের দিকে তাকাইয়া 
+  দুফোঁটা অশ্রু যখন গন্ডদেশ ছুইলো,
+  হঠাৎ দূরে দেখি সেই পথিক কহিয়া উঠিল,
+  "বলিয়াছিলাম পূর্বেই আমি তো 
+  ক্ষণিকের অবসরে আসিয়াছি; 
+  আমার গন্তব্য ভিন্ন।"।
+
+  ভাবিলাম তাহাকে আটকাইয়া রাখি,
+  কিন্তু সে যে চলিয়া গিয়াছে অনেক পূর্বেই।
+  সেই শূন্য হস্ত মেলিয়া,
+  ভারাক্রান্ত হৃদয়ে তাহাকে বিদায় জানাইয়া 
+  আবার চলিতে শুরু করলাম অজানার উদ্দেশ্যে,
+  বুঝিলাম ইহাই মঙ্গলজনক।।`
+      },
+       {
+        id: "love-confession",
+        title: "Love Confession",
+        category: "Poem",
+        language: "english",
+        featured: false,
+        date: "April 2026",
+        content: `I found peace in nature and was feeling blessed overlooking your hands which were holding me tightly. Looking towards the horizon, I was feeling quite a sense of joy ignoring your love which is only for me. I used to spend my days and nights resting my head on your chest, wrapped in a sense of security.
+
+Ignoring your care I pick up fights and drift away. Hurt by the disrespect of your love, you walk away. At the very moment I didn't feel anything and went back to nature.
+
+The first part of romanticism which was bounded with love, care, peace and joy came to an end. The sense of absence, feelings of fragile and exile helds me tightly in its arms. I realized the security of your love, the peace i found while holding your hands, looking into your eyes and realizing that those eyes filled with love only for me.
+
+I went back to you. You were in a state of fragile but accept me. Your love for me makes a magical boundaries to protect me from the harsh world. Your love for me is constant.
+
+Nature played a crucial role in my life, but your presence makes it always better. You're the reason of my joyfulness.
+
+Please hold me tightly in your arms the way gravitational force works. Love me like the depth of the ocean. Always kept my heart warm in cold nights and after cold fights. You're my Joy.`
+      },
+    ]
   },
 
   // ======= Arka Samaddar =======

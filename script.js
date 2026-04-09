@@ -200,7 +200,7 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
     college: "Memari College",
     year: "4 Year, English Honours with Research",
     gmail: "lokeshsahani200@gmail.com",
-    photo: "lokesh-sahani.jpeg",
+    photo: "lokesh-sahani.jpg",
     language: "bengali, english, hinglish",
     bio: "",
     joinedDate: "April 2026",

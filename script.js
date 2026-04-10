@@ -203,7 +203,7 @@ And nothing's left to see more beautiful than thee.`
     gmail: "lokeshsahani200@gmail.com",
     photo: "lokesh-sahani.jpg",
     language: "bengali, english, hinglish",
-    bio: "",
+    bio: "ছন্নছাড়া ধ্রুব তারা, জীবন হতে দিশেহারা",
     joinedDate: "April 2026",
     works: [
       {

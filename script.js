@@ -356,6 +356,17 @@ function getAllWorks() {
 
 const allWorks = getAllWorks();
 
+// ✅ ADD THIS SHUFFLE FUNCTION
+function shuffleWorks(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] =
+    [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 // ================================
 //   ✅ SMOOTH SCROLL FIX
 //   Works on ALL devices including
@@ -764,7 +775,8 @@ function applyFilters() {
     );
   }
 
-  renderWorks(filtered);
+  // ✅ Shuffle before rendering!
+  renderWorks(shuffleWorks(filtered));
 }
 
 // ================================
@@ -923,7 +935,8 @@ function observeReveal() {
 
 document.addEventListener('DOMContentLoaded', () => {
   renderFeatured();
-  renderWorks();
+  // ✅ Shuffle works on page load!
+  renderWorks(shuffleWorks(allWorks));
   renderWriters();
   observeReveal();
 });

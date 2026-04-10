@@ -232,6 +232,62 @@ And nothing's left to see more beautiful than thee.`
       },
     ]
   },
+        // ======= Sanglap Ghosal =======
+      {
+        id: "sanglap-ghosal",
+        name: "Sanglap Ghosal",
+        college: "Memari College",
+        year: "4 Year, English Honours with Research",
+        gmail: "sanglapghosal1234@gmail.com",
+        photo: "sanglap-ghosal.jpg",
+        language: "bengali, english",
+        bio: "Simplicity Is The Ultimate Sophistication 💚 🍀",
+        joinedDate: "April 2026",
+        works: [
+          {
+            id: "আরো-কিছুক্ষন-থাকলে-না-হয়",
+            title: "আরো কিছুক্ষন থাকলে না হয়",
+            category: "Poem",
+            language: "bengali",
+            featured: true,
+            date: "April 2026",
+            content: `কল্পনার ভেলায় চড়ে তুমি আস হৃদয়ের মাঝে।
+              দেখেনা এ পৃথিবী তোমার আমার প্রীতি।
+              তুমিও হয়তো জানোনা, কখনো ভাবোনা, তোমার আমার মিলন।
+              যা অবাস্তবতার মতন।
+              তবু ঘটে চলে মনের মাঝে, হৃদয়ে রক্ত ক্ষরনের সাখে সাথে।
+              রক্ত ক্ষরণ হয় না তো এমনি, যখনই ভাবি বাস্তবতা তখনি হয় তা বুঝি আমি।`
+          }
+        ]
+      },
+         // ======= New entry =======
+     /* {
+        id: "",
+        name: "",
+        college: "",
+        year: "4 Year, English Honours with Research",
+        gmail: "sanglapghosal1234@gmail.com",
+        photo: "sanglap-ghosal.jpg",
+        language: "bengali, english",
+        bio: "Simplicity Is The Ultimate Sophistication 💚 🍀",
+        joinedDate: "April 2026",
+        works: [
+          {
+            id: "আরো-কিছুক্ষন-থাকলে-না-হয়",
+            title: "আরো কিছুক্ষন থাকলে না হয়",
+            category: "Poem",
+            language: "bengali",
+            featured: true,
+            date: "April 2026",
+            content: `কল্পনার ভেলায় চড়ে তুমি আস হৃদয়ের মাঝে।
+              দেখেনা এ পৃথিবী তোমার আমার প্রীতি।
+              তুমিও হয়তো জানোনা, কখনো ভাবোনা, তোমার আমার মিলন।
+              যা অবাস্তবতার মতন।
+              তবু ঘটে চলে মনের মাঝে, হৃদয়ে রক্ত ক্ষরনের সাখে সাথে।
+              রক্ত ক্ষরণ হয় না তো এমনি, যখনই ভাবি বাস্তবতা তখনি হয় তা বুঝি আমি।`
+          }
+        ]
+      }, */
 ];
 
 // ================================

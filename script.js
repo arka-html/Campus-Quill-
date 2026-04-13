@@ -1,11 +1,6 @@
 // ================================
 //   CAMPUSQUILL — COMPLETE JS
 // ================================
-
-// ================================
-//   DATA — ONLY EDIT THIS PART
-// ================================
-
 const writers = [
 
   // ======= MRITTIKA KONAR =======
@@ -146,7 +141,7 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
   works: [
     {
       id: "heavenly-stairs",
-      title: "Oh God led me to the stairs to Heaven",
+      title: "Oh God Led Me to the Stairs to Heaven",
       category: "Quote",
       language: "english",
       featured: false,
@@ -154,7 +149,45 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
       content: `Oh God led me to the stairs to heaven,
 I've seen all beautiful things in this Earth
 And nothing's left to see more beautiful than thee.`
-    }
+    },
+    {
+      id: "the-rain-knows-my-name",
+      title: "The Rain Knows My Name",
+      category: "Poem",
+      language: "english",
+      featured: true,
+      date: "April 2026",
+      content: `The rain knows my name
+        It calls me to the window glass
+        Where cold fingers draw your face
+        In the fog of my breathing.
+
+        I stand there, long after
+        The rain forgets my name
+        And only the window remembers
+        The shape of what I lost.`
+    },
+     {
+      id: "a-more-beautiful-day",
+      title: "A More Beautiful Day",
+      category: "Poem",
+      language: "english",
+      featured: true,
+      date: "April 2026",
+      content: `The sunrise came today all pink and gold,
+      And spread its colors proud across the sky,
+      But I have seen a beauty more than bold,
+      Your sleepy Sunday face that catches my eye.
+
+      The ocean crashes loud upon the shore,
+      And flowers open slow like they rehearsed,
+      But your soft smile makes all that beauty poor,
+      Like nature knew your face and you came first.
+      
+
+      Nature spent millions of years to be this way,
+      Just to make a more beautiful day.`
+          },
   ]
 },
   // ======= Ankita Mondal  =======

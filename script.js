@@ -128,17 +128,17 @@ Please hold me tightly in your arms the way gravitational force works. Love me l
 
   // ======= Arka Samaddar =======
 {
-  id: "arka-samaddar",
-  name: "Arka Samaddar",
-  college: "Memari College",
-  year: "2nd Year B.A. English",
-  gmail: "arkasamaddar.mym@gmail.com",
-  photo: "admin.jpeg",
-  language: "english",
-  bio: "Fair is foul and foul is fair, hover through the fog and filthy air.",
-  joinedDate: "April 2026",
-  isFounder: true,
-  works: [
+    id: "arka-samaddar",
+    name: "Arka Samaddar",
+    college: "Memari College",
+    year: "2nd Year B.A. English",
+    gmail: "arkasamaddar.mym@gmail.com",
+    photo: "admin.jpeg",
+    language: "english",
+    bio: "Not every sad story has a breakup, But every breakup has its own sad story.",
+    joinedDate: "April 2026",
+    isFounder: true,
+    works: [
     {
       id: "heavenly-stairs",
       title: "Oh God Led Me to the Stairs to Heaven",

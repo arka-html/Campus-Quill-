@@ -940,3 +940,42 @@ document.addEventListener('DOMContentLoaded', () => {
   renderWriters();
   observeReveal();
 });
+// ================================
+//   NOTIFICATION BANNER
+// ================================
+
+const notifBanner = document.getElementById('notifBanner');
+const notifClose  = document.getElementById('notifClose');
+
+// Hide banner initially
+notifBanner.style.display = 'none';
+
+// Show after 2 seconds
+setTimeout(() => {
+  if (!sessionStorage.getItem('notifClosed')) {
+    notifBanner.style.display = 'flex';
+    notifBanner.style.opacity = '1';
+    notifBanner.style.transform =
+      'translateX(-50%) translateY(0)';
+  }
+}, 2000);
+
+// Close button click
+notifClose.addEventListener('click', () => {
+  closeBanner();
+});
+
+// Auto close after 8 seconds
+setTimeout(() => {
+  closeBanner();
+}, 8000);
+
+function closeBanner() {
+  notifBanner.style.opacity = '0';
+  notifBanner.style.transform =
+    'translateX(-50%) translateY(30px)';
+  sessionStorage.setItem('notifClosed', 'true');
+  setTimeout(() => {
+    notifBanner.style.display = 'none';
+  }, 400);
+}

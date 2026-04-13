@@ -343,21 +343,60 @@ And nothing's left to see more beautiful than thee.`
           }
         ]
       },
-         // ======= New entry =======
-     /* {
-        id: "",
-        name: "",
-        college: "",
+         // ======= Deblina Mondal =======
+ {
+        id: "deblina-mondal",
+        name: "Deblina Mondal",
+        college: "Memari College",
         year: "2nd Year B.A. English",
-        gmail: "sanglapghosal1234@gmail.com",
-        photo: "sanglap-ghosal.jpg",
-        language: "bengali, english",
-        bio: "Simplicity Is The Ultimate Sophistication 💚 🍀",
+        gmail: "deblinamondal579@gmail.com",
+        photo: "deblina-mondal.jpg",
+        language: "bengali",
+        bio: "𝑰'𝒎 𝒉𝒐𝒍𝒅𝒊𝒏𝒈 𝒎𝒚 𝒅𝒓𝒆𝒂𝒎, 𝒕𝒉𝒆 𝒅𝒂𝒚 𝒊𝒔 𝒚𝒆𝒕 𝒕𝒐 𝒄𝒐𝒎𝒆...🌻",
         joinedDate: "April 2026",
         works: [
           {
-            id: "আরো-কিছুক্ষন-থাকলে-না-হয়",
-            title: "আরো কিছুক্ষন থাকলে না হয়",
+            id: "চিঠী",
+            title: "চিঠী",
+            category: "Poem",
+            language: "bengali",
+            featured: true,
+            date: "April 2026",
+            content: `কেমন আছো তুমি..?
+            বড়ো জানতে ইচ্ছা হয় 
+            জানি, নিশ্চই তুমি ভালো আছো
+            আমিও আছি
+            আচ্ছা, তোমার আমার কথা মনে পড়ে..?
+            জানতে ইচ্ছা হয় আমি কেমন আছি..?
+            জানো, আমার জানতে ইচ্ছা হয় তুমি কেমন দেখতে হইছো
+            জানি, এখন তোমার ওই কালো এলোমেলো চুল গুলোতে রূপালীর ছোঁয়া লেগেছে..
+            আচ্ছা, তুমি কি আজও আগের মতো আমার কথা ভাবো..?
+            জানি তুমি ভাবো যখন একলা থাকো ঘরে
+            আমিও ভাবই ঠিক তোমারই মতো করে
+            আচ্ছা, তুমি কি থাকো আজও সেই গ্রামের বাগানে ঘেরা বাড়িটা তে ..?
+            যেখানে অনেক স্বপ্ন এঁকেছিলে..
+            জানি এখন তুমি থাকো শহরের দুকামরা ফ্ল্যাটবাড়িতে..
+            আমিও তাই
+            শুধু একটাই তফাৎ তোমার ঠিকানায় তোমার নাম
+            আর আমার ঠিকানায়..? সেই C/O `
+          },
+        ]
+      },
+           // ======= New entry =======
+     /* {
+        id: "deblina-mondal",
+        name: "Deblina Mondal",
+        college: "Memari College",
+        year: "2nd Year B.A. English",
+        gmail: "deblinamondal579@gmail.com",
+        photo: "deblina-mondal.jpg",
+        language: "bengali",
+        bio: "𝑰'𝒎 𝒉𝒐𝒍𝒅𝒊𝒏𝒈 𝒎𝒚 𝒅𝒓𝒆𝒂𝒎, 𝒕𝒉𝒆 𝒅𝒂𝒚 𝒊𝒔 𝒚𝒆𝒕 𝒕𝒐 𝒄𝒐𝒎𝒆...🌻",
+        joinedDate: "April 2026",
+        works: [
+          {
+            id: "চিঠী",
+            title: "চিঠী",
             category: "Poem",
             language: "bengali",
             featured: true,

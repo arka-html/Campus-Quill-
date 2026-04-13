@@ -954,9 +954,12 @@ notifBanner.style.display = 'none';
 setTimeout(() => {
   if (!sessionStorage.getItem('notifClosed')) {
     notifBanner.style.display = 'flex';
-    notifBanner.style.opacity = '1';
-    notifBanner.style.transform =
-      'translateX(-50%) translateY(0)';
+    // Small delay for display to register
+    setTimeout(() => {
+      notifBanner.style.opacity = '1';
+      notifBanner.style.transform =
+        'translateX(-50%) translateY(0)';
+    }, 50);
   }
 }, 2000);
 
@@ -974,6 +977,7 @@ function closeBanner() {
   notifBanner.style.opacity = '0';
   notifBanner.style.transform =
     'translateX(-50%) translateY(30px)';
+  notifBanner.style.pointerEvents = 'none';
   sessionStorage.setItem('notifClosed', 'true');
   setTimeout(() => {
     notifBanner.style.display = 'none';

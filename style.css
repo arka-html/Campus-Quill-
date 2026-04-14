@@ -219,17 +219,23 @@ body {
 
 /* --- NAV OVERLAY --- */
 .nav-overlay {
-  display: none;
+  display: block;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.5);
   z-index: 998;
   backdrop-filter: blur(4px);
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-.nav-overlay.active { opacity: 1; }
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 /* ==============================
    HERO SECTION
